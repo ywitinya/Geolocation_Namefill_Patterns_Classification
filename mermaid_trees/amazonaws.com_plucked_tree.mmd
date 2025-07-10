@@ -1,0 +1,196 @@
+flowchart TD
+n0["."]
+n1["amazonaws.com"]
+n0 --> n1
+n2["compute"]
+n1 --> n2
+n3["digits@2:[1,1]for:1"]
+n2 --> n3
+n4["UN-locode:US"]
+n3 --> n4
+n5["{ip0}-{ip1}-{ip2}-{ip3}"]
+n4 --> n5
+n6["ec2"]
+n3 --> n6
+n7["{ip0}-{ip1}-{ip2}-{ip3}"]
+n6 --> n7
+n8["GEO-classification:.me"]
+n2 --> n8
+n9["directional:-central"]
+n8 --> n9
+n10["digits@4:[1,1]for:1"]
+n9 --> n10
+n11["ec2"]
+n10 --> n11
+n12["{ip0}-{ip1}-{ip2}-{ip3}"]
+n11 --> n12
+n13["directional:-south"]
+n8 --> n13
+n14["digits@4:[1,1]for:1"]
+n13 --> n14
+n15["ec2"]
+n14 --> n15
+n16["{ip0}-{ip1}-{ip2}-{ip3}"]
+n15 --> n16
+n17["us"]
+n2 --> n17
+n18["directional:-west"]
+n17 --> n18
+n19["digits@4:[1,2]for:2"]
+n18 --> n19
+n20["UN-locode:US"]
+n19 --> n20
+n21["{ip0}-{ip1}-{ip2}-{ip3}"]
+n20 --> n21
+n22["directional:-east"]
+n17 --> n22
+n23["digits@4:[2,2]for:1"]
+n22 --> n23
+n24["UN-locode:US"]
+n23 --> n24
+n25["{ip0}-{ip1}-{ip2}-{ip3}"]
+n24 --> n25
+n26["UN-locode:US"]
+n17 --> n26
+n27["directional:-east"]
+n26 --> n27
+n28["digits@5:[1,1]for:1"]
+n27 --> n28
+n29["UN-locode:US"]
+n28 --> n29
+n30["{ip0}-{ip1}-{ip2}-{ip3}"]
+n29 --> n30
+n31["directional:-west"]
+n26 --> n31
+n32["digits@5:[1,1]for:1"]
+n31 --> n32
+n33["UN-locode:US"]
+n32 --> n33
+n34["{ip0}-{ip1}-{ip2}-{ip3}"]
+n33 --> n34
+n35["GEO-classification:.eu"]
+n2 --> n35
+n36["directional:-west"]
+n35 --> n36
+n37["digits@4:[1,3]for:3"]
+n36 --> n37
+n38["ec2"]
+n37 --> n38
+n39["{ip0}-{ip1}-{ip2}-{ip3}"]
+n38 --> n39
+n40["UN-locode:FR"]
+n37 --> n40
+n41["{ip0}-{ip1}-{ip2}-{ip3}"]
+n40 --> n41
+n42["directional:-central"]
+n35 --> n42
+n43["digits@4:[1,1]for:1"]
+n42 --> n43
+n44["UN-locode:DE"]
+n43 --> n44
+n45["{ip0}-{ip1}-{ip2}-{ip3}"]
+n44 --> n45
+n46["directional:-south"]
+n35 --> n46
+n47["digits@4:[1,2]for:2"]
+n46 --> n47
+n48["ec2"]
+n47 --> n48
+n49["{ip0}-{ip1}-{ip2}-{ip3}"]
+n48 --> n49
+n50["directional:-north"]
+n35 --> n50
+n51["digits@4:[1,1]for:1"]
+n50 --> n51
+n52["ec2"]
+n51 --> n52
+n53["{ip0}-{ip1}-{ip2}-{ip3}"]
+n52 --> n53
+n54["GEO-classification:.ap"]
+n2 --> n54
+n55["directional:-northeast"]
+n54 --> n55
+n56["digits@4:[1,3]for:3"]
+n55 --> n56
+n57["ec2"]
+n56 --> n57
+n58["{ip0}-{ip1}-{ip2}-{ip3}"]
+n57 --> n58
+n59["directional:-southeast"]
+n54 --> n59
+n60["digits@4:[1,5]for:5"]
+n59 --> n60
+n61["ec2"]
+n60 --> n61
+n62["{ip0}-{ip1}-{ip2}-{ip3}"]
+n61 --> n62
+n63["directional:-east"]
+n54 --> n63
+n64["digits@4:[1,1]for:1"]
+n63 --> n64
+n65["ec2"]
+n64 --> n65
+n66["{ip0}-{ip1}-{ip2}-{ip3}"]
+n65 --> n66
+n67["directional:-south"]
+n54 --> n67
+n68["digits@4:[1,1]for:1"]
+n67 --> n68
+n69["ec2"]
+n68 --> n69
+n70["{ip0}-{ip1}-{ip2}-{ip3}"]
+n69 --> n70
+n71["GEO-classification:.il"]
+n2 --> n71
+n72["directional:-central"]
+n71 --> n72
+n73["digits@4:[1,1]for:1"]
+n72 --> n73
+n74["ec2"]
+n73 --> n74
+n75["{ip0}-{ip1}-{ip2}-{ip3}"]
+n74 --> n75
+n76["GEO-classification:.ca"]
+n2 --> n76
+n77["directional:-central"]
+n76 --> n77
+n78["digits@4:[1,1]for:1"]
+n77 --> n78
+n79["ec2"]
+n78 --> n79
+n80["{ip0}-{ip1}-{ip2}-{ip3}"]
+n79 --> n80
+n81["directional:-west"]
+n76 --> n81
+n82["digits@4:[1,1]for:1"]
+n81 --> n82
+n83["ec2"]
+n82 --> n83
+n84["{ip0}-{ip1}-{ip2}-{ip3}"]
+n83 --> n84
+n85["GEO-classification:.sa"]
+n2 --> n85
+n86["directional:-east"]
+n85 --> n86
+n87["digits@4:[1,1]for:1"]
+n86 --> n87
+n88["ec2"]
+n87 --> n88
+n89["{ip0}-{ip1}-{ip2}-{ip3}"]
+n88 --> n89
+n90["GEO-classification:.af"]
+n2 --> n90
+n91["directional:-south"]
+n90 --> n91
+n92["digits@4:[1,1]for:1"]
+n91 --> n92
+n93["ec2"]
+n92 --> n93
+n94["{ip0}-{ip1}-{ip2}-{ip3}"]
+n93 --> n94
+n95["smtp"]
+n1 --> n95
+n96["UN-locode:US"]
+n95 --> n96
+n97["{ip2}-{ip3}"]
+n96 --> n97
