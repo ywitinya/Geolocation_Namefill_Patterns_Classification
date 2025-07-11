@@ -3,6 +3,7 @@ import sys
 import re
 import pandas as pd
 import gzip
+import json
 from collections import defaultdict, deque
 from difflib import get_close_matches
 
@@ -83,7 +84,9 @@ def build_modified_tree(original_tree, matches_by_depth, match_type, aggregated=
 
             if new_label not in new_node.children:
                 new_node.children[new_label] = MatchNode(new_label)
-
+            if new_label != label:
+                if label.startswith(".") or label.startswith("-"):
+                    new_node.children[new_label].values.add(label)
             new_node.children[new_label].values.update(child.values)
             dfs(child, new_node.children[new_label], depth + 1)
 
@@ -145,7 +148,7 @@ def load_and_match(plucked_trees, tree, etldp1, country_iso, conn, aggregated=Fa
     for match_type, term_set, matcher in matches_list:
         match_result = matcher(tokens, term_set, match_type) if match_type != "GEO-names" else matcher(tokens, term_set)
         if match_result:
-            print(f"{match_type} matches: {match_result}")
+            #print(f"{match_type} matches: {match_result}")
             label = f"{match_type}:{country_iso}" if match_type not in MATCHERS[3:] else f"{match_type}"
             base_tree = build_modified_tree(base_tree, match_result, label, aggregated)
     
@@ -192,7 +195,7 @@ def main():
         lines, _ = generate_mermaid_tree(plucked_tree.root, aggregated=(args.graph == "aggregated"))
         
         # store the trees/visualize and analyse
-        all_trees_dict[etldp1] = NaryTree.tree_to_dict(plucked_tree.root)
+        all_trees_dict[f"{etldp1}_tree"] = NaryTree.tree_to_dict(plucked_tree.root)
 
         try:
             with open(f"mermaid_trees/{etldp1}_plucked_tree.mmd", 'w') as f:
@@ -203,6 +206,7 @@ def main():
                 f.write("\n".join(lines))
 
     metrics_df = plot_tree_metrics(tree_complexity_metrics)
+    print(metrics_df.head())
     if args.export_metrics:
         metrics_df.to_csv(args.export_metrics)
     if args.export_json:

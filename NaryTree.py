@@ -19,13 +19,6 @@ class NaryTree:
                 
             node = node.children[token]
 
-    def tree_to_dict(node):
-        return {
-            'label': node.label,
-            'values': list(node.values),
-            'children': {label: tree_to_dict(child) for label, child in node.children.items()}
-        }
-
     def __str__(self):
         lines = []
 
@@ -39,6 +32,24 @@ class NaryTree:
 
         recurse(self.root)
         return "\n".join(lines)
+    
+    @staticmethod   
+    def tree_to_dict(node):
+        result = {}
+
+        result['label'] = node.label
+        
+        if node.values:
+            result['values'] = list(node.values)
+
+        if node.children:
+            result['children'] = {
+                label: NaryTree.tree_to_dict(child)
+                for label, child in node.children.items()
+            }
+
+        return result
+
 
     @staticmethod    
     def generate_tokens(fqdn: str, etldp1: str = None):
