@@ -5,7 +5,7 @@ from geoip2.errors import AddressNotFoundError
 from collections import defaultdict
 
 # Load the GeoLite2-City database once
-reader = geoip2.database.Reader("../Downloads/GeoLite2-Country_20250620/GeoLite2-Country.mmdb")
+reader = geoip2.database.Reader("GeoLite2-Country.mmdb")
 
 def get_iso_country(ip: str) -> str:
     try:
