@@ -3,6 +3,7 @@ import sys
 import re
 import pandas as pd
 import gzip
+import json
 from collections import defaultdict, deque
 from difflib import get_close_matches
 
@@ -83,7 +84,9 @@ def build_modified_tree(original_tree, matches_by_depth, match_type, aggregated=
 
             if new_label not in new_node.children:
                 new_node.children[new_label] = MatchNode(new_label)
-
+            if new_label != label:
+                if label.startswith(".") or label.startswith("-"):
+                    new_node.children[new_label].values.add(label)
             new_node.children[new_label].values.update(child.values)
             dfs(child, new_node.children[new_label], depth + 1)
 
@@ -145,7 +148,7 @@ def load_and_match(plucked_trees, tree, etldp1, country_iso, conn, aggregated=Fa
     for match_type, term_set, matcher in matches_list:
         match_result = matcher(tokens, term_set, match_type) if match_type != "GEO-names" else matcher(tokens, term_set)
         if match_result:
-            print(f"{match_type} matches: {match_result}")
+            #print(f"{match_type} matches: {match_result}")
             label = f"{match_type}:{country_iso}" if match_type not in MATCHERS[3:] else f"{match_type}"
             base_tree = build_modified_tree(base_tree, match_result, label, aggregated)
     
@@ -169,13 +172,17 @@ def main():
     df['pattern_clean'] = df['pattern'].apply(normalize_namefill_pattern)
     df['country_iso'] = df['ip'].apply(get_iso_country)
 
+    country_nan_count = 0
     trees, tree_complexity_metrics, plucked_trees, all_trees_dict = {}, {}, {}, {}
     for _, row in df.iterrows():
         pattern, etldp1, country_iso = row['pattern_clean'], row['etldp1'], row['country_iso']
         if pd.notna(pattern) and pd.notna(etldp1) and pd.notna(country_iso):
-            key = f"{etldp1}_{country_iso}"
-            trees.setdefault(key, NaryTree
-        ()).insert(pattern, etldp1)
+            try:
+                key = f"{etldp1}_{country_iso}"
+                trees.setdefault(key, NaryTree()).insert(pattern, etldp1)
+            except ValueError:
+                country_nan_count += 1
+                print(f"{etldp1}resolved to ISO:{country_iso}")
 
     conn = geo.connect_geo_db(args.geodb)
     for key, tree in trees.items():
@@ -192,7 +199,7 @@ def main():
         lines, _ = generate_mermaid_tree(plucked_tree.root, aggregated=(args.graph == "aggregated"))
         
         # store the trees/visualize and analyse
-        all_trees_dict[etldp1] = NaryTree.tree_to_dict(plucked_tree.root)
+        all_trees_dict[f"{etldp1}_tree"] = NaryTree.tree_to_dict(plucked_tree.root)
 
         try:
             with open(f"mermaid_trees/{etldp1}_plucked_tree.mmd", 'w') as f:
@@ -203,6 +210,10 @@ def main():
                 f.write("\n".join(lines))
 
     metrics_df = plot_tree_metrics(tree_complexity_metrics)
+    print(metrics_df.head())
+    print(metrics_df.describe())
+    print(f"total patterns: {sum(metrics_df.iloc[:,1])}")
+    print(f"Couldn't process {country_nan_count} patterns!")
     if args.export_metrics:
         metrics_df.to_csv(args.export_metrics)
     if args.export_json:

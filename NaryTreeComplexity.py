@@ -71,9 +71,9 @@ def analyze_tree_complexity(tree):
     """Return a dictionary of all relevant complexity metrics."""
     return {
         # "total_nodes": count_total_nodes(tree),
-        # "leaf_count": count_leaf_nodes(tree),
         # "internal_node_count": count_internal_nodes(tree),
         # "total_branches": total_branches(tree),
+         "leaf_count": count_leaf_nodes(tree),
         "branching_to_leaf_ratio": branching_to_leaf_ratio(tree),
         "average_out_degree": average_out_degree(tree)
     }

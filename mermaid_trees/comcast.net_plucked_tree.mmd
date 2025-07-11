@@ -2,7 +2,7 @@ flowchart TD
 n0["."]
 n1["comcast.net"]
 n0 --> n1
-n2["UN-subdiv:US"]
+n2["UN-subdiv:US .i.e. .ar, .nm, .va"]
 n1 --> n2
 n3["hsd1"]
 n2 --> n3
@@ -14,7 +14,7 @@ n6["c"]
 n2 --> n6
 n7["{ip0}-{ip1}-{ip3}-hsd1"]
 n6 --> n7
-n8["GEO-classification:.ca"]
+n8["GEO-classification:.ca .i.e. .ca"]
 n1 --> n8
 n9["hsd1"]
 n8 --> n9
@@ -24,7 +24,7 @@ n11["{ip0}-{ip1}-{ip2}-{ip3}"]
 n10 --> n11
 n12["edsseq:succ(fqdn[3:-12], digits, carry_rollover)"]
 n1 --> n12
-n13["GEO-classification:.me"]
+n13["GEO-classification:.me .i.e. .me"]
 n1 --> n13
 n14["hsd1"]
 n13 --> n14
@@ -32,13 +32,13 @@ n15["c"]
 n14 --> n15
 n16["{ip0}-{ip1}-{ip2}-{ip3}"]
 n15 --> n16
-n17["GEO-names:US"]
+n17["GEO-names:US .i.e. .hartford, .richmond, .indiana"]
 n1 --> n17
-n18["GEO-classification:.ca"]
+n18["GEO-classification:.ca .i.e. .ca"]
 n17 --> n18
 n19["{ip0}-{ip1}-{ip2}-{ip3}-pinedale"]
 n18 --> n19
-n20["UN-subdiv:US"]
+n20["UN-subdiv:US .i.e. .co, .va, .or"]
 n17 --> n20
 n21["staplesmllrd"]
 n20 --> n21
@@ -46,11 +46,11 @@ n22["wdm{ip3}"]
 n21 --> n22
 n23["vptshost1vmseq:succ(fqdn[11:-37], digits, carry_rollover)"]
 n21 --> n23
-n24["UN-locode:US"]
+n24["UN-locode:US .i.e. .cdn"]
 n21 --> n24
 n25["ec"]
 n24 --> n25
-n26["UN-locode:US"]
+n26["UN-locode:US .i.e. -ric"]
 n25 --> n26
 n27["seq:succ(fqdn[11:-37], digits, carry_numeric)"]
 n26 --> n27
@@ -66,13 +66,13 @@ n32["et"]
 n21 --> n32
 n33["seq:succ(fqdn[3:-44], digits, carry_rollover)-rer210"]
 n32 --> n33
-n34["GEO-names:US"]
+n34["GEO-names:US .i.e. .winchester, .westfield, .sebastian"]
 n20 --> n34
-n35["UN-locode:US"]
+n35["UN-locode:US .i.e. .ctv, .mdu, .cdn"]
 n34 --> n35
 n36["ec"]
 n35 --> n36
-n37["UN-locode:US"]
+n37["UN-locode:US .i.e. -sea, -sav, -ric"]
 n36 --> n37
 n38["digits@7:[1,14]for:9"]
 n37 --> n38
@@ -146,7 +146,7 @@ n72["a"]
 n71 --> n72
 n73["seq:succ(fqdn[19:-35], digits, carry_rollover)-vip"]
 n72 --> n73
-n74["UN-locode:US"]
+n74["UN-locode:US .i.e. -rec, -prb"]
 n69 --> n74
 n75["vngs"]
 n74 --> n75
@@ -274,7 +274,7 @@ n136["odol"]
 n34 --> n136
 n137["atsec"]
 n136 --> n137
-n138["UN-locode:US"]
+n138["UN-locode:US .i.e. -bos"]
 n137 --> n138
 n139["seq:succ(fqdn[15:-29], digits, carry_rollover)"]
 n138 --> n139
@@ -352,7 +352,7 @@ n175["sigb"]
 n34 --> n175
 n176["adcm"]
 n175 --> n176
-n177["UN-locode:US"]
+n177["UN-locode:US .i.e. -vip"]
 n176 --> n177
 n178["seq:succ(fqdn[14:-35], digits, carry_numeric)"]
 n177 --> n178
@@ -360,23 +360,23 @@ n179["siga"]
 n34 --> n179
 n180["adcm"]
 n179 --> n180
-n181["UN-locode:US"]
+n181["UN-locode:US .i.e. -vip"]
 n180 --> n181
 n182["seq:succ(fqdn[14:-35], digits, carry_numeric)"]
 n181 --> n182
 n183["boulevard"]
 n20 --> n183
-n184["UN-locode:US"]
+n184["UN-locode:US .i.e. .cdn"]
 n183 --> n184
 n185["ec"]
 n184 --> n185
-n186["UN-locode:US"]
+n186["UN-locode:US .i.e. -ric"]
 n185 --> n186
 n187["seq:succ(fqdn[11:-34], digits, carry_rollover)"]
 n186 --> n187
 n188["vining"]
 n20 --> n188
-n189["UN-locode:US"]
+n189["UN-locode:US .i.e. .ctv"]
 n188 --> n189
 n190["nashtn"]
 n189 --> n190
@@ -426,7 +426,7 @@ n212["blade"]
 n211 --> n212
 n213["seq:succ(fqdn[23:-34], digits, carry_numeric)"]
 n212 --> n213
-n214["UN-locode:US"]
+n214["UN-locode:US .i.e. .oam, .dns"]
 n208 --> n214
 n215["adcm"]
 n214 --> n215
@@ -438,7 +438,7 @@ n218["seq:succ(fqdn[22:-34], digits, carry_numeric)"]
 n217 --> n218
 n219["swseq:succ(fqdn[6:-34], digits, carry_rollover)"]
 n214 --> n219
-n220["UN-locode:US"]
+n220["UN-locode:US .i.e. .cpe"]
 n20 --> n220
 n221["ce"]
 n220 --> n221
@@ -498,11 +498,11 @@ n248["csv01"]
 n247 --> n248
 n249["griffith"]
 n20 --> n249
-n250["UN-locode:US"]
+n250["UN-locode:US .i.e. .cdn"]
 n249 --> n250
 n251["ec"]
 n250 --> n251
-n252["UN-locode:US"]
+n252["UN-locode:US .i.e. -chi"]
 n251 --> n252
 n253["seq:succ(fqdn[11:-32], digits, carry_rollover)"]
 n252 --> n253
@@ -528,11 +528,11 @@ n263["seq:succ(fqdn[11:-33], digits, carry_numeric)-ur06"]
 n261 --> n263
 n264["noblesville"]
 n20 --> n264
-n265["UN-locode:US"]
+n265["UN-locode:US .i.e. .cdn"]
 n264 --> n265
 n266["ec"]
 n265 --> n266
-n267["UN-locode:US"]
+n267["UN-locode:US .i.e. -ina"]
 n266 --> n267
 n268["digits@7:[1,1]for:1"]
 n267 --> n268
@@ -618,7 +618,7 @@ n308["v"]
 n307 --> n308
 n309["highfield"]
 n20 --> n309
-n310["UN-locode:US"]
+n310["UN-locode:US .i.e. .rio"]
 n309 --> n310
 n311["storacc"]
 n310 --> n311
@@ -634,11 +634,11 @@ n316["seq:succ(fqdn[16:-32], digits, carry_rollover)"]
 n315 --> n316
 n317["cosprings"]
 n20 --> n317
-n318["UN-locode:US"]
+n318["UN-locode:US .i.e. .cdn"]
 n317 --> n318
 n319["ec"]
 n318 --> n319
-n320["UN-locode:US"]
+n320["UN-locode:US .i.e. -den"]
 n319 --> n320
 n321["seq:succ(fqdn[11:-32], digits, carry_rollover)"]
 n320 --> n321
@@ -670,11 +670,11 @@ n334["rerseq:succ(fqdn[3:-36], digits, carry_rollover)"]
 n322 --> n334
 n335["miamimetro"]
 n20 --> n335
-n336["UN-locode:US"]
+n336["UN-locode:US .i.e. .cdn"]
 n335 --> n336
 n337["ec"]
 n336 --> n337
-n338["UN-locode:US"]
+n338["UN-locode:US .i.e. -coa"]
 n337 --> n338
 n339["digits@7:[6,6]for:1"]
 n338 --> n339
@@ -682,11 +682,11 @@ n340["seq:succ(fqdn[15:-34], digits, carry_rollover)"]
 n339 --> n340
 n341["staterd7"]
 n20 --> n341
-n342["UN-locode:US"]
+n342["UN-locode:US .i.e. .cdn"]
 n341 --> n342
 n343["ec"]
 n342 --> n343
-n344["UN-locode:US"]
+n344["UN-locode:US .i.e. -coa"]
 n343 --> n344
 n345["digits@7:[7,7]for:1"]
 n344 --> n345
@@ -716,11 +716,11 @@ n357["digits@5:[20,20]for:1"]
 n356 --> n357
 n358["rerseq:succ(fqdn[9:-33], digits, carry_rollover)"]
 n357 --> n358
-n359["UN-locode:US"]
+n359["UN-locode:US .i.e. .cdn"]
 n355 --> n359
 n360["ec"]
 n359 --> n360
-n361["UN-locode:US"]
+n361["UN-locode:US .i.e. -coa"]
 n360 --> n361
 n362["digits@7:[1,1]for:1"]
 n361 --> n362
@@ -728,9 +728,9 @@ n363["seq:succ(fqdn[15:-33], digits, carry_rollover)"]
 n362 --> n363
 n364["seq:succ(fqdn[11:-33], digits, carry_rollover)"]
 n361 --> n364
-n365["UN-locode:US"]
+n365["UN-locode:US .i.e. -rat"]
 n359 --> n365
-n366["UN-locode:US"]
+n366["UN-locode:US .i.e. -coa"]
 n365 --> n366
 n367["seq:succ(fqdn[12:-33], digits, carry_rollover)"]
 n366 --> n367
@@ -738,11 +738,11 @@ n368["vptshost1vmseq:succ(fqdn[11:-33], digits, carry_rollover)"]
 n355 --> n368
 n369["northpoint"]
 n20 --> n369
-n370["UN-locode:US"]
+n370["UN-locode:US .i.e. .cdn"]
 n369 --> n370
 n371["ec"]
 n370 --> n371
-n372["UN-locode:US"]
+n372["UN-locode:US .i.e. -coa"]
 n371 --> n372
 n373["digits@7:[2,2]for:1"]
 n372 --> n373
@@ -752,11 +752,11 @@ n375["soagseq:succ(fqdn[4:-34], digits, carry_rollover)"]
 n369 --> n375
 n376["southdade"]
 n20 --> n376
-n377["UN-locode:US"]
+n377["UN-locode:US .i.e. .cdn"]
 n376 --> n377
 n378["ec"]
 n377 --> n378
-n379["UN-locode:US"]
+n379["UN-locode:US .i.e. -coa"]
 n378 --> n379
 n380["digits@7:[3,3]for:1"]
 n379 --> n380
@@ -766,11 +766,11 @@ n382["soagseq:succ(fqdn[4:-33], digits, carry_rollover)"]
 n376 --> n382
 n383["ftlauderdale"]
 n20 --> n383
-n384["UN-locode:US"]
+n384["UN-locode:US .i.e. .cdn"]
 n383 --> n384
 n385["ec"]
 n384 --> n385
-n386["UN-locode:US"]
+n386["UN-locode:US .i.e. -coa"]
 n385 --> n386
 n387["digits@7:[4,4]for:1"]
 n386 --> n387
@@ -778,7 +778,7 @@ n388["seq:succ(fqdn[15:-36], digits, carry_rollover)"]
 n387 --> n388
 n389["114thave"]
 n20 --> n389
-n390["UN-locode:US"]
+n390["UN-locode:US .i.e. .rio"]
 n389 --> n390
 n391["comp"]
 n390 --> n391
@@ -800,11 +800,11 @@ n399["seq:succ(fqdn[16:-32], digits, carry_rollover)"]
 n398 --> n399
 n400["gardens"]
 n20 --> n400
-n401["UN-locode:US"]
+n401["UN-locode:US .i.e. .cdn"]
 n400 --> n401
 n402["ec"]
 n401 --> n402
-n403["UN-locode:US"]
+n403["UN-locode:US .i.e. -coa"]
 n402 --> n403
 n404["seq:succ(fqdn[11:-31], digits, carry_rollover)"]
 n403 --> n404
@@ -838,11 +838,11 @@ n418["cnsseq:succ(fqdn[8:-35], digits, carry_rollover)"]
 n416 --> n418
 n419["airport"]
 n20 --> n419
-n420["UN-locode:US"]
+n420["UN-locode:US .i.e. .cdn"]
 n419 --> n420
 n421["ec"]
 n420 --> n421
-n422["UN-locode:US"]
+n422["UN-locode:US .i.e. -hou"]
 n421 --> n422
 n423["digits@7:[9,9]for:1"]
 n422 --> n423
@@ -850,11 +850,11 @@ n424["seq:succ(fqdn[15:-31], digits, carry_rollover)"]
 n423 --> n424
 n425["tidwell"]
 n20 --> n425
-n426["UN-locode:US"]
+n426["UN-locode:US .i.e. .cdn"]
 n425 --> n426
 n427["ec"]
 n426 --> n427
-n428["UN-locode:US"]
+n428["UN-locode:US .i.e. -hou"]
 n427 --> n428
 n429["digits@7:[8,8]for:1"]
 n428 --> n429
@@ -864,11 +864,11 @@ n431["sagseq:succ(fqdn[3:-31], digits, carry_rollover)"]
 n425 --> n431
 n432["leaguecity"]
 n20 --> n432
-n433["UN-locode:US"]
+n433["UN-locode:US .i.e. .cdn"]
 n432 --> n433
 n434["ec"]
 n433 --> n434
-n435["UN-locode:US"]
+n435["UN-locode:US .i.e. -hou"]
 n434 --> n435
 n436["digits@7:[5,5]for:1"]
 n435 --> n436
@@ -876,11 +876,11 @@ n437["seq:succ(fqdn[15:-34], digits, carry_rollover)"]
 n436 --> n437
 n438["strack"]
 n20 --> n438
-n439["UN-locode:US"]
+n439["UN-locode:US .i.e. .cdn"]
 n438 --> n439
 n440["ec"]
 n439 --> n440
-n441["UN-locode:US"]
+n441["UN-locode:US .i.e. -hou"]
 n440 --> n441
 n442["digits@7:[7,7]for:1"]
 n441 --> n442
@@ -896,11 +896,11 @@ n447["arsc1"]
 n446 --> n447
 n448["pooler"]
 n20 --> n448
-n449["UN-locode:US"]
+n449["UN-locode:US .i.e. .cdn"]
 n448 --> n449
 n450["ec"]
 n449 --> n450
-n451["UN-locode:US"]
+n451["UN-locode:US .i.e. -sav"]
 n450 --> n451
 n452["digits@7:[5,5]for:1"]
 n451 --> n452
@@ -912,7 +912,7 @@ n455["be"]
 n454 --> n455
 n456["seq:succ(fqdn[3:-40], digits, carry_rollover)-rar01"]
 n455 --> n456
-n457["GEO-classification:.il"]
+n457["GEO-classification:.il .i.e. .il"]
 n17 --> n457
 n458["area4"]
 n457 --> n458
@@ -986,17 +986,17 @@ n492["digits@5:[36,36]for:1"]
 n491 --> n492
 n493["lsseq:succ(fqdn[8:-31], digits, carry_rollover)-d"]
 n492 --> n493
-n494["UN-locode:US"]
+n494["UN-locode:US .i.e. .cdn"]
 n458 --> n494
 n495["ec"]
 n494 --> n495
-n496["UN-locode:US"]
+n496["UN-locode:US .i.e. -chi"]
 n495 --> n496
 n497["seq:succ(fqdn[11:-29], digits, carry_rollover)"]
 n496 --> n497
-n498["UN-locode:US"]
+n498["UN-locode:US .i.e. -mid, -rat"]
 n494 --> n498
-n499["UN-locode:US"]
+n499["UN-locode:US .i.e. -chi"]
 n498 --> n499
 n500["3{ip3}"]
 n499 --> n500
@@ -1014,7 +1014,7 @@ n506["be"]
 n458 --> n506
 n507["seq:succ(fqdn[3:-34], digits, carry_rollover)-ar01"]
 n506 --> n507
-n508["GEO-names:US"]
+n508["GEO-names:US .i.e. .glenview, .romeoville, .normal"]
 n457 --> n508
 n509["gi"]
 n508 --> n509
@@ -1046,19 +1046,19 @@ n522["seq:succ(fqdn[5:-37], digits, carry_rollover)-ur03"]
 n517 --> n522
 n523["seq:succ(fqdn[5:-39], digits, carry_rollover)-ur01"]
 n517 --> n523
-n524["UN-locode:US"]
+n524["UN-locode:US .i.e. .cdn"]
 n508 --> n524
 n525["ec"]
 n524 --> n525
-n526["UN-locode:US"]
+n526["UN-locode:US .i.e. -chi"]
 n525 --> n526
 n527["seq:succ(fqdn[11:-32], digits, carry_rollover)"]
 n526 --> n527
 n528["seq:succ(fqdn[11:-34], digits, carry_rollover)"]
 n526 --> n528
-n529["UN-locode:US"]
+n529["UN-locode:US .i.e. -rat"]
 n524 --> n529
-n530["UN-locode:US"]
+n530["UN-locode:US .i.e. -chi"]
 n529 --> n530
 n531["seq:succ(fqdn[12:-32], digits, carry_rollover)"]
 n530 --> n531
@@ -1128,11 +1128,11 @@ n563["rerseq:succ(fqdn[8:-34], digits, carry_rollover)"]
 n562 --> n563
 n564["rerseq:succ(fqdn[9:-34], digits, carry_rollover)"]
 n562 --> n564
-n565["UN-locode:US"]
+n565["UN-locode:US .i.e. .cdn"]
 n547 --> n565
 n566["ec"]
 n565 --> n566
-n567["UN-locode:US"]
+n567["UN-locode:US .i.e. -chi"]
 n566 --> n567
 n568["seq:succ(fqdn[11:-34], digits, carry_rollover)"]
 n567 --> n568
@@ -1148,13 +1148,13 @@ n573["seq:succ(fqdn[7:-38], digits, carry_rollover)-mgmt02"]
 n572 --> n573
 n574["railroadave"]
 n457 --> n574
-n575["UN-locode:US"]
+n575["UN-locode:US .i.e. .ctv, .eas"]
 n574 --> n575
 n576["nl"]
 n575 --> n576
-n577["UN-locode:US"]
+n577["UN-locode:US .i.e. -cox, -ing"]
 n576 --> n577
-n578["UN-locode:US"]
+n578["UN-locode:US .i.e. -cox"]
 n577 --> n578
 n579["p"]
 n578 --> n579
@@ -1184,7 +1184,7 @@ n591["wsl7lb"]
 n590 --> n591
 n592["seq:succ(fqdn[26:-35], digits, carry_rollover)"]
 n591 --> n592
-n593["GEO-names:US"]
+n593["GEO-names:US .i.e. -shaw, -rogers"]
 n577 --> n593
 n594["p"]
 n593 --> n594
@@ -1228,7 +1228,7 @@ n613["p"]
 n612 --> n613
 n614["seq:succ(fqdn[19:-35], digits, carry_rollover)"]
 n613 --> n614
-n615["GEO-names:US"]
+n615["GEO-names:US .i.e. -shaw, -rogers"]
 n576 --> n615
 n616["tlspxy"]
 n615 --> n616
@@ -1262,11 +1262,11 @@ n630["s"]
 n629 --> n630
 n631["seq:succ(fqdn[22:-35], digits, carry_rollover)"]
 n630 --> n631
-n632["UN-locode:US"]
+n632["UN-locode:US .i.e. -nat"]
 n575 --> n632
 n633["ntlk"]
 n632 --> n633
-n634["UN-locode:US"]
+n634["UN-locode:US .i.e. -pup"]
 n633 --> n634
 n635["seq:succ(fqdn[17:-35], digits, carry_rollover)"]
 n634 --> n635
@@ -1294,15 +1294,15 @@ n646["seq:succ(fqdn[7:-41], digits, carry_rollover)-peg01"]
 n645 --> n646
 n647["wchicago"]
 n457 --> n647
-n648["UN-locode:US"]
+n648["UN-locode:US .i.e. .cdn"]
 n647 --> n648
 n649["ec"]
 n648 --> n649
-n650["UN-locode:US"]
+n650["UN-locode:US .i.e. -chi"]
 n649 --> n650
 n651["seq:succ(fqdn[11:-32], digits, carry_rollover)"]
 n650 --> n651
-n652["UN-locode:US"]
+n652["UN-locode:US .i.e. .cpe"]
 n457 --> n652
 n653["ce"]
 n652 --> n653
@@ -1314,7 +1314,7 @@ n656["davlilbpseq:succ(fqdn[11:-28], digits, carry_rollover)w"]
 n653 --> n656
 n657["wntkildwseq:succ(fqdn[11:-28], digits, carry_rollover)w"]
 n653 --> n657
-n658["GEO-classification:.il"]
+n658["GEO-classification:.il .i.e. .il"]
 n1 --> n658
 n659["hsd1"]
 n658 --> n659
@@ -1322,11 +1322,11 @@ n660["c"]
 n659 --> n660
 n661["{ip0}-{ip1}-{ip2}-{ip3}"]
 n660 --> n661
-n662["UN-locode:US"]
+n662["UN-locode:US .i.e. .vdn, .sys, .bct"]
 n1 --> n662
 n663["osvm"]
 n662 --> n663
-n664["UN-locode:US"]
+n664["UN-locode:US .i.e. -ch2"]
 n663 --> n664
 n665["seq:succ(fqdn[9:-16], digits, carry_rollover)"]
 n664 --> n665
@@ -1338,15 +1338,15 @@ n668["1seq:succ(fqdn[10:-16], digits_lower, carry_rollover)"]
 n664 --> n668
 n669["2seq:succ(fqdn[10:-16], digits_lower, carry_rollover)"]
 n664 --> n669
-n670["UN-locode:US"]
+n670["UN-locode:US .i.e. .eas, .ntp, .dvr"]
 n662 --> n670
-n671["UN-locode:US"]
+n671["UN-locode:US .i.e. -smf, -ch2, -po2"]
 n670 --> n671
 n672["seq:succ(fqdn[8:-17], digits, carry_rollover)p"]
 n671 --> n672
 n673["vpc3"]
 n671 --> n673
-n674["UN-locode:US"]
+n674["UN-locode:US .i.e. -w24"]
 n673 --> n674
 n675["digits@6:[24,24]for:1"]
 n674 --> n675
@@ -1362,7 +1362,7 @@ n680["fres"]
 n670 --> n680
 n681["seq:succ(fqdn[9:-17], digits, carry_rollover)p"]
 n680 --> n681
-n682["GEO-classification:-il"]
+n682["GEO-classification:-il .i.e. -il"]
 n670 --> n682
 n683["area4"]
 n682 --> n683
@@ -1374,7 +1374,7 @@ n686["mseq:succ(fqdn[5:-16], digits, carry_rollover)"]
 n670 --> n686
 n687["edgeseq:succ(fqdn[8:-16], digits, carry_rollover)"]
 n670 --> n687
-n688["UN-subdiv:US"]
+n688["UN-subdiv:US .i.e. -as"]
 n670 --> n688
 n689["rws"]
 n688 --> n689
@@ -1382,7 +1382,7 @@ n690["p1"]
 n689 --> n690
 n691["seq:succ(fqdn[14:-16], digits, carry_rollover)"]
 n690 --> n691
-n692["UN-locode:US"]
+n692["UN-locode:US .i.e. -cws, -sws"]
 n688 --> n692
 n693["p2"]
 n692 --> n693
@@ -1528,7 +1528,7 @@ n763["agta"]
 n760 --> n763
 n764["seq:succ(fqdn[9:-16], digits, carry_rollover)"]
 n763 --> n764
-n765["UN-subdiv:US"]
+n765["UN-subdiv:US .i.e. -as"]
 n760 --> n765
 n766["seq:succ(fqdn[7:-16], digits, carry_rollover)"]
 n765 --> n766
@@ -1544,7 +1544,7 @@ n771["po"]
 n770 --> n771
 n772["aseq:succ(fqdn[9:-16], digits, carry_rollover)"]
 n771 --> n772
-n773["UN-locode:US"]
+n773["UN-locode:US .i.e. -ch2"]
 n770 --> n773
 n774["aseq:succ(fqdn[10:-16], digits, carry_rollover)"]
 n773 --> n774
@@ -1556,7 +1556,7 @@ n777["aseq:succ(fqdn[11:-17], digits, carry_rollover)p"]
 n776 --> n777
 n778["xfwsam"]
 n662 --> n778
-n779["UN-locode:US"]
+n779["UN-locode:US .i.e. -cmc"]
 n778 --> n779
 n780["seq:succ(fqdn[11:-16], digits, carry_rollover)"]
 n779 --> n780
@@ -1566,7 +1566,7 @@ n782["po"]
 n781 --> n782
 n783["seq:succ(fqdn[11:-16], digits, carry_rollover)"]
 n782 --> n783
-n784["UN-locode:US"]
+n784["UN-locode:US .i.e. -ch2"]
 n781 --> n784
 n785["seq:succ(fqdn[12:-16], digits, carry_rollover)"]
 n784 --> n785
@@ -1606,7 +1606,7 @@ n802["po"]
 n801 --> n802
 n803["aseq:succ(fqdn[11:-17], digits, carry_rollover)p"]
 n802 --> n803
-n804["UN-locode:US"]
+n804["UN-locode:US .i.e. -ch2"]
 n801 --> n804
 n805["aseq:succ(fqdn[12:-17], digits, carry_rollover)p"]
 n804 --> n805
@@ -1616,13 +1616,13 @@ n807["po"]
 n806 --> n807
 n808["aseq:succ(fqdn[11:-17], digits, carry_rollover)p"]
 n807 --> n808
-n809["UN-locode:US"]
+n809["UN-locode:US .i.e. -ch2"]
 n806 --> n809
 n810["aseq:succ(fqdn[12:-17], digits, carry_rollover)p"]
 n809 --> n810
 n811["scout"]
 n662 --> n811
-n812["UN-locode:US"]
+n812["UN-locode:US .i.e. -ch2"]
 n811 --> n812
 n813["aseq:succ(fqdn[11:-17], digits, carry_rollover)p"]
 n812 --> n813
@@ -1634,7 +1634,7 @@ n816["aseq:succ(fqdn[10:-17], digits, carry_rollover)p"]
 n815 --> n816
 n817["resimta"]
 n662 --> n817
-n818["UN-locode:US"]
+n818["UN-locode:US .i.e. -c2p, -h2p, -ch2"]
 n817 --> n818
 n819["{ip3}v"]
 n818 --> n819
@@ -1648,13 +1648,13 @@ n823["seq:succ(fqdn[12:-16], digits, carry_rollover)"]
 n822 --> n823
 n824["pistack"]
 n662 --> n824
-n825["UN-locode:US"]
+n825["UN-locode:US .i.e. -cmc"]
 n824 --> n825
 n826["bseq:succ(fqdn[13:-16], digits, carry_rollover)"]
 n825 --> n826
 n827["resomta"]
 n662 --> n827
-n828["UN-locode:US"]
+n828["UN-locode:US .i.e. -h2p, -ch2"]
 n827 --> n828
 n829["seq:succ(fqdn[12:-17], digits, carry_rollover)v"]
 n828 --> n829
@@ -1666,13 +1666,13 @@ n832["seq:succ(fqdn[12:-16], digits, carry_rollover)"]
 n831 --> n832
 n833["reszmta"]
 n662 --> n833
-n834["UN-locode:US"]
+n834["UN-locode:US .i.e. -ch2"]
 n833 --> n834
 n835["seq:succ(fqdn[12:-17], digits, carry_rollover)v"]
 n834 --> n835
 n836["resqmta"]
 n662 --> n836
-n837["UN-locode:US"]
+n837["UN-locode:US .i.e. -ch2"]
 n836 --> n837
 n838["seq:succ(fqdn[12:-17], digits, carry_rollover)v"]
 n837 --> n838
@@ -1682,7 +1682,7 @@ n840["seq:succ(fqdn[12:-16], digits, carry_rollover)"]
 n839 --> n840
 n841["qoecnf"]
 n662 --> n841
-n842["GEO-names:US"]
+n842["GEO-names:US .i.e. -eden"]
 n841 --> n842
 n843["seq:succ(fqdn[12:-16], digits, carry_rollover)"]
 n842 --> n843
@@ -1762,7 +1762,7 @@ n880["03p"]
 n879 --> n880
 n881["pistor"]
 n662 --> n881
-n882["UN-locode:US"]
+n882["UN-locode:US .i.e. -cmc"]
 n881 --> n882
 n883["bseq:succ(fqdn[12:-16], digits, carry_rollover)"]
 n882 --> n883
@@ -1774,19 +1774,19 @@ n886["01p"]
 n885 --> n886
 n887["cimaapp"]
 n662 --> n887
-n888["UN-locode:US"]
+n888["UN-locode:US .i.e. -ch2"]
 n887 --> n888
 n889["seq:succ(fqdn[12:-17], digits, carry_rollover)p"]
 n888 --> n889
 n890["cimaapptier"]
 n662 --> n890
-n891["UN-locode:US"]
+n891["UN-locode:US .i.e. -cmc"]
 n890 --> n891
 n892["seq:succ(fqdn[16:-17], digits, carry_rollover)p"]
 n891 --> n892
 n893["bvrtseq:succ(fqdn[4:-27], digits, carry_rollover)dpe"]
 n662 --> n893
-n894["UN-locode:US"]
+n894["UN-locode:US .i.e. -cmc"]
 n893 --> n894
 n895["03p"]
 n894 --> n895
@@ -1796,7 +1796,7 @@ n897["fres"]
 n896 --> n897
 n898["seq:succ(fqdn[12:-16], digits, carry_rollover)"]
 n897 --> n898
-n899["GEO-names:US"]
+n899["GEO-names:US .i.e. -atlanta"]
 n896 --> n899
 n900["seq:succ(fqdn[15:-16], digits, carry_rollover)"]
 n899 --> n900
@@ -1868,7 +1868,7 @@ n933["aseq:succ(fqdn[11:-17], digits, carry_rollover)p"]
 n932 --> n933
 n934["codebig"]
 n662 --> n934
-n935["UN-locode:US"]
+n935["UN-locode:US .i.e. -ch2"]
 n934 --> n935
 n936["seq:succ(fqdn[12:-16], digits, carry_rollover)"]
 n935 --> n936
@@ -1878,7 +1878,7 @@ n938["seq:succ(fqdn[11:-16], digits, carry_rollover)"]
 n937 --> n938
 n939["xfwwsadc"]
 n662 --> n939
-n940["UN-locode:US"]
+n940["UN-locode:US .i.e. -ch2"]
 n939 --> n940
 n941["seq:succ(fqdn[13:-16], digits, carry_rollover)"]
 n940 --> n941
@@ -1888,15 +1888,15 @@ n943["seq:succ(fqdn[12:-16], digits, carry_rollover)"]
 n942 --> n943
 n944["rdei"]
 n662 --> n944
-n945["UN-locode:US"]
+n945["UN-locode:US .i.e. -plt, -vip"]
 n944 --> n945
-n946["UN-locode:US"]
+n946["UN-locode:US .i.e. -ch2"]
 n945 --> n946
 n947["seq:succ(fqdn[13:-16], digits, carry_rollover)"]
 n946 --> n947
 n948["seq:succ(fqdn[13:-16], digits, carry_numeric)"]
 n946 --> n948
-n949["UN-subdiv:US"]
+n949["UN-subdiv:US .i.e. -as"]
 n945 --> n949
 n950["seq:succ(fqdn[12:-16], digits, carry_numeric)"]
 n949 --> n950
@@ -1912,7 +1912,7 @@ n955["seq:succ(fqdn[13:-17], digits, carry_rollover)s"]
 n953 --> n955
 n956["qoecnfm"]
 n662 --> n956
-n957["GEO-names:US"]
+n957["GEO-names:US .i.e. -eden"]
 n956 --> n957
 n958["seq:succ(fqdn[13:-17], digits, carry_rollover)p"]
 n957 --> n958
@@ -1958,7 +1958,7 @@ n978["bseq:succ(fqdn[12:-17], digits, carry_rollover)p"]
 n977 --> n978
 n979["xplatdb"]
 n662 --> n979
-n980["UN-locode:US"]
+n980["UN-locode:US .i.e. -pot, -ch2"]
 n979 --> n980
 n981["seq:succ(fqdn[12:-17], digits, carry_rollover)s"]
 n980 --> n981
@@ -1970,13 +1970,13 @@ n984["seq:succ(fqdn[10:-18], digits, carry_rollover)-b"]
 n983 --> n984
 n985["xfwhhgm"]
 n662 --> n985
-n986["UN-locode:US"]
+n986["UN-locode:US .i.e. -ch2"]
 n985 --> n986
 n987["seq:succ(fqdn[12:-16], digits, carry_rollover)"]
 n986 --> n987
 n988["respmta"]
 n662 --> n988
-n989["UN-locode:US"]
+n989["UN-locode:US .i.e. -ch2"]
 n988 --> n989
 n990["seq:succ(fqdn[12:-17], digits, carry_rollover)v"]
 n989 --> n990
@@ -1994,7 +1994,7 @@ n996["rseq:succ(fqdn[14:-17], digits, carry_rollover)p"]
 n995 --> n996
 n997["rseq:succ(fqdn[14:-21], digits, carry_rollover)p"]
 n995 --> n997
-n998["UN-locode:US"]
+n998["UN-locode:US .i.e. -con"]
 n997 --> n998
 n999["storsrvf2"]
 n662 --> n999
@@ -2004,7 +2004,7 @@ n1001["rseq:succ(fqdn[14:-17], digits, carry_rollover)p"]
 n1000 --> n1001
 n1002["rseq:succ(fqdn[14:-21], digits, carry_rollover)p"]
 n1000 --> n1002
-n1003["UN-locode:US"]
+n1003["UN-locode:US .i.e. -con"]
 n1002 --> n1003
 n1004["firehose"]
 n662 --> n1004
@@ -2038,7 +2038,7 @@ n1018["wc"]
 n1017 --> n1018
 n1019["bseq:succ(fqdn[10:-21], digits, carry_rollover)p"]
 n1018 --> n1019
-n1020["UN-locode:US"]
+n1020["UN-locode:US .i.e. -vip"]
 n1019 --> n1020
 n1021["bseq:succ(fqdn[10:-17], digits, carry_rollover)p"]
 n1018 --> n1021
@@ -2048,7 +2048,7 @@ n1023["wc"]
 n1022 --> n1023
 n1024["bseq:succ(fqdn[10:-21], digits, carry_rollover)s"]
 n1023 --> n1024
-n1025["UN-locode:US"]
+n1025["UN-locode:US .i.e. -vip"]
 n1024 --> n1025
 n1026["aseq:succ(fqdn[10:-20], digits, carry_rollover)-vip"]
 n1023 --> n1026
@@ -2066,7 +2066,7 @@ n1032["b"]
 n1031 --> n1032
 n1033["aseq:succ(fqdn[9:-21], digits, carry_rollover)p"]
 n1030 --> n1033
-n1034["UN-locode:US"]
+n1034["UN-locode:US .i.e. -vip"]
 n1033 --> n1034
 n1035["bseq:succ(fqdn[9:-19], digits, carry_rollover)p"]
 n1030 --> n1035
@@ -2080,7 +2080,7 @@ n1039["wc"]
 n1038 --> n1039
 n1040["bseq:succ(fqdn[10:-21], digits, carry_rollover)p"]
 n1039 --> n1040
-n1041["UN-locode:US"]
+n1041["UN-locode:US .i.e. -vip"]
 n1040 --> n1041
 n1042["ostack"]
 n662 --> n1042
@@ -2114,7 +2114,7 @@ n1056["wc"]
 n1055 --> n1056
 n1057["seq:succ(fqdn[11:-21], digits, carry_rollover)p"]
 n1056 --> n1057
-n1058["UN-locode:US"]
+n1058["UN-locode:US .i.e. -vip"]
 n1057 --> n1058
 n1059["ctpredis"]
 n662 --> n1059
@@ -2128,7 +2128,7 @@ n1063["wc"]
 n1062 --> n1063
 n1064["seq:succ(fqdn[9:-21], digits, carry_rollover)s"]
 n1063 --> n1064
-n1065["UN-locode:US"]
+n1065["UN-locode:US .i.e. -vip"]
 n1064 --> n1065
 n1066["sapdb"]
 n662 --> n1066
@@ -2142,7 +2142,7 @@ n1070["wc"]
 n1069 --> n1070
 n1071["rseq:succ(fqdn[14:-21], digits, carry_rollover)p"]
 n1070 --> n1071
-n1072["UN-locode:US"]
+n1072["UN-locode:US .i.e. -con"]
 n1071 --> n1072
 n1073["storsrvf6"]
 n662 --> n1073
@@ -2156,11 +2156,11 @@ n1077["wc"]
 n1076 --> n1077
 n1078["rseq:succ(fqdn[14:-21], digits, carry_rollover)p"]
 n1077 --> n1078
-n1079["UN-locode:US"]
+n1079["UN-locode:US .i.e. -con"]
 n1078 --> n1079
 n1080["5g"]
 n662 --> n1080
-n1081["UN-locode:US"]
+n1081["UN-locode:US .i.e. -chi"]
 n1080 --> n1081
 n1082["cfma"]
 n1081 --> n1082
@@ -2170,7 +2170,7 @@ n1084["prod"]
 n662 --> n1084
 n1085["m"]
 n1084 --> n1085
-n1086["UN-locode:US"]
+n1086["UN-locode:US .i.e. -ccp"]
 n1085 --> n1086
 n1087["esqh"]
 n1086 --> n1087
@@ -2178,7 +2178,7 @@ n1088["seq:succ(fqdn[16:-16], digits, carry_rollover)"]
 n1087 --> n1088
 n1089["a"]
 n1084 --> n1089
-n1090["UN-locode:US"]
+n1090["UN-locode:US .i.e. -ccp"]
 n1089 --> n1090
 n1091["d3kr"]
 n1090 --> n1091
@@ -2190,7 +2190,7 @@ n1094["seq:succ(fqdn[16:-16], digits, carry_rollover)"]
 n1093 --> n1094
 n1095["g"]
 n1084 --> n1095
-n1096["UN-locode:US"]
+n1096["UN-locode:US .i.e. -ccp"]
 n1095 --> n1096
 n1097["bh8j"]
 n1096 --> n1097
@@ -2202,7 +2202,7 @@ n1100["seq:succ(fqdn[16:-16], digits, carry_rollover)"]
 n1099 --> n1100
 n1101["e"]
 n1084 --> n1101
-n1102["UN-locode:US"]
+n1102["UN-locode:US .i.e. -ccp"]
 n1101 --> n1102
 n1103["88fx"]
 n1102 --> n1103
@@ -2214,7 +2214,7 @@ n1106["seq:succ(fqdn[16:-16], digits, carry_rollover)"]
 n1105 --> n1106
 n1107["b"]
 n1084 --> n1107
-n1108["UN-locode:US"]
+n1108["UN-locode:US .i.e. -ccp"]
 n1107 --> n1108
 n1109["vsf6"]
 n1108 --> n1109
@@ -2226,7 +2226,7 @@ n1112["seq:succ(fqdn[16:-16], digits, carry_rollover)"]
 n1111 --> n1112
 n1113["d"]
 n1084 --> n1113
-n1114["UN-locode:US"]
+n1114["UN-locode:US .i.e. -ccp"]
 n1113 --> n1114
 n1115["ws12"]
 n1114 --> n1115
@@ -2238,7 +2238,7 @@ n1118["seq:succ(fqdn[16:-16], digits, carry_rollover)"]
 n1117 --> n1118
 n1119["k"]
 n1084 --> n1119
-n1120["UN-locode:US"]
+n1120["UN-locode:US .i.e. -ccp"]
 n1119 --> n1120
 n1121["sif9"]
 n1120 --> n1121
@@ -2246,7 +2246,7 @@ n1122["seq:succ(fqdn[16:-16], digits, carry_rollover)"]
 n1121 --> n1122
 n1123["resrbldnsd"]
 n662 --> n1123
-n1124["UN-locode:US"]
+n1124["UN-locode:US .i.e. -c2p, -h2p"]
 n1123 --> n1124
 n1125["seq:succ(fqdn[15:-16], digits, carry_rollover)"]
 n1124 --> n1125
@@ -2262,7 +2262,7 @@ n1130["az2"]
 n1129 --> n1130
 n1131["dseq:succ(fqdn[17:-17], digits, carry_rollover)p"]
 n1130 --> n1131
-n1132["UN-subdiv:US"]
+n1132["UN-subdiv:US .i.e. .co, .va, .de"]
 n662 --> n1132
 n1133["digits@3:[1,1]for:1"]
 n1132 --> n1133
@@ -2290,7 +2290,7 @@ n1144["seq:succ(fqdn[11:-37], digits, carry_numeric)-ur02"]
 n1143 --> n1144
 n1145["v"]
 n1144 --> n1145
-n1146["GEO-names:US"]
+n1146["GEO-names:US .i.e. .catonsville, .dover, .whitemarsh"]
 n1132 --> n1146
 n1147["wdmseq:succ(fqdn[3:-30], digits, carry_rollover)"]
 n1146 --> n1147
@@ -2346,7 +2346,7 @@ n1172["digits@5:[3,3]for:1"]
 n1171 --> n1172
 n1173["seq:succ(fqdn[5:-32], digits, carry_rollover)-sr01"]
 n1172 --> n1173
-n1174["UN-locode:US"]
+n1174["UN-locode:US .i.e. .smf, .dcf, .cpe"]
 n1132 --> n1174
 n1175["ce"]
 n1174 --> n1175
@@ -2478,7 +2478,7 @@ n1238["swseq:succ(fqdn[2:-27], digits, carry_numeric)-d"]
 n1219 --> n1238
 n1239["datacast"]
 n662 --> n1239
-n1240["UN-subdiv:US"]
+n1240["UN-subdiv:US .i.e. -hi"]
 n1239 --> n1240
 n1241["ignite"]
 n1240 --> n1241
@@ -2486,13 +2486,13 @@ n1242["predictive"]
 n1241 --> n1242
 n1243["seq:succ(fqdn[30:-16], digits, carry_rollover)"]
 n1242 --> n1243
-n1244["GEO-names:US"]
+n1244["GEO-names:US .i.e. -prospect"]
 n1241 --> n1244
 n1245["seq:succ(fqdn[28:-16], digits, carry_rollover)"]
 n1244 --> n1245
 n1246["lincs"]
 n662 --> n1246
-n1247["UN-subdiv:US"]
+n1247["UN-subdiv:US .i.e. -as"]
 n1246 --> n1247
 n1248["ignite"]
 n1247 --> n1248
@@ -2506,7 +2506,7 @@ n1252["az1"]
 n1251 --> n1252
 n1253["seq:succ(fqdn[17:-16], digits, carry_rollover)"]
 n1252 --> n1253
-n1254["UN-subdiv:US"]
+n1254["UN-subdiv:US .i.e. -as"]
 n1250 --> n1254
 n1255["az1"]
 n1254 --> n1255
@@ -2516,7 +2516,7 @@ n1257["deploy"]
 n662 --> n1257
 n1258["a"]
 n1257 --> n1258
-n1259["UN-locode:US"]
+n1259["UN-locode:US .i.e. -ccp"]
 n1258 --> n1259
 n1260["vrlj"]
 n1259 --> n1260
@@ -2574,13 +2574,13 @@ n1286["aseq:succ(fqdn[13:-20], digits, carry_rollover)-flt"]
 n1285 --> n1286
 n1287["ac"]
 n662 --> n1287
-n1288["UN-locode:US"]
+n1288["UN-locode:US .i.e. -wch, -ch2"]
 n1287 --> n1288
 n1289["seq:succ(fqdn[7:-16], digits, carry_rollover)"]
 n1288 --> n1289
 n1290["exlfake"]
 n662 --> n1290
-n1291["UN-locode:US"]
+n1291["UN-locode:US .i.e. -ch2"]
 n1290 --> n1291
 n1292["fseq:succ(fqdn[13:-17], digits, carry_numeric)d"]
 n1291 --> n1292
@@ -2590,7 +2590,7 @@ n1294["po"]
 n1293 --> n1294
 n1295["seq:succ(fqdn[12:-17], digits, carry_rollover)v"]
 n1294 --> n1295
-n1296["UN-locode:US"]
+n1296["UN-locode:US .i.e. -ch2"]
 n1293 --> n1296
 n1297["seq:succ(fqdn[13:-17], digits, carry_rollover)v"]
 n1296 --> n1297
@@ -2606,13 +2606,13 @@ n1302["seq:succ(fqdn[13:-16], digits, carry_rollover)"]
 n1301 --> n1302
 n1303["ssmlapp"]
 n662 --> n1303
-n1304["UN-locode:US"]
+n1304["UN-locode:US .i.e. -ch2"]
 n1303 --> n1304
 n1305["seq:succ(fqdn[12:-17], digits, carry_rollover)p"]
 n1304 --> n1305
 n1306["reshatst"]
 n662 --> n1306
-n1307["UN-locode:US"]
+n1307["UN-locode:US .i.e. -ch2"]
 n1306 --> n1307
 n1308["seq:succ(fqdn[13:-16], digits, carry_rollover)"]
 n1307 --> n1308
@@ -2644,19 +2644,19 @@ n1321["seq:succ(fqdn[12:-16], digits, carry_rollover)"]
 n1320 --> n1321
 n1322["splunk"]
 n662 --> n1322
-n1323["UN-locode:US"]
+n1323["UN-locode:US .i.e. -fwd"]
 n1322 --> n1323
 n1324["seq:succ(fqdn[11:-16], digits, carry_rollover)"]
 n1323 --> n1324
 n1325["dayview"]
 n662 --> n1325
-n1326["UN-locode:US"]
+n1326["UN-locode:US .i.e. -ch2"]
 n1325 --> n1326
 n1327["seq:succ(fqdn[12:-16], digits, carry_rollover)"]
 n1326 --> n1327
 n1328["bvetws"]
 n662 --> n1328
-n1329["UN-locode:US"]
+n1329["UN-locode:US .i.e. -ch2"]
 n1328 --> n1329
 n1330["seq:succ(fqdn[11:-16], digits, carry_rollover)"]
 n1329 --> n1330
@@ -2666,13 +2666,13 @@ n1332["seq:succ(fqdn[10:-16], digits, carry_rollover)"]
 n1331 --> n1332
 n1333["solidtest"]
 n662 --> n1333
-n1334["UN-locode:US"]
+n1334["UN-locode:US .i.e. -ch2"]
 n1333 --> n1334
 n1335["seq:succ(fqdn[14:-16], digits, carry_rollover)"]
 n1334 --> n1335
 n1336["bvere"]
 n662 --> n1336
-n1337["UN-locode:US"]
+n1337["UN-locode:US .i.e. -ch2"]
 n1336 --> n1337
 n1338["seq:succ(fqdn[10:-16], digits, carry_rollover)"]
 n1337 --> n1338
@@ -2682,7 +2682,7 @@ n1340["seq:succ(fqdn[9:-16], digits, carry_rollover)"]
 n1339 --> n1340
 n1341["hscass"]
 n662 --> n1341
-n1342["UN-locode:US"]
+n1342["UN-locode:US .i.e. -wch, -ch2"]
 n1341 --> n1342
 n1343["seq:succ(fqdn[11:-17], digits, carry_rollover)p"]
 n1342 --> n1343
@@ -2708,13 +2708,13 @@ n1353["po"]
 n1352 --> n1353
 n1354["seq:succ(fqdn[13:-17], digits, carry_rollover)v"]
 n1353 --> n1354
-n1355["UN-locode:US"]
+n1355["UN-locode:US .i.e. -ch2"]
 n1352 --> n1355
 n1356["seq:succ(fqdn[14:-17], digits, carry_rollover)v"]
 n1355 --> n1356
 n1357["xfwsyn"]
 n662 --> n1357
-n1358["UN-locode:US"]
+n1358["UN-locode:US .i.e. -ch2"]
 n1357 --> n1358
 n1359["seq:succ(fqdn[11:-16], digits, carry_rollover)"]
 n1358 --> n1359
@@ -2744,7 +2744,7 @@ n1371["aseq:succ(fqdn[14:-17], digits, carry_rollover)c"]
 n1370 --> n1371
 n1372["arborcol"]
 n662 --> n1372
-n1373["UN-locode:US"]
+n1373["UN-locode:US .i.e. -ch2"]
 n1372 --> n1373
 n1374["seq:succ(fqdn[13:-17], digits, carry_rollover)p"]
 n1373 --> n1374
@@ -2758,7 +2758,7 @@ n1378["seq:succ(fqdn[16:-16], digits, carry_rollover)"]
 n1377 --> n1378
 n1379["bcvtools"]
 n662 --> n1379
-n1380["UN-locode:US"]
+n1380["UN-locode:US .i.e. -wch, -ch2"]
 n1379 --> n1380
 n1381["seq:succ(fqdn[13:-17], digits, carry_rollover)p"]
 n1380 --> n1381
@@ -2810,7 +2810,7 @@ n1404["seq:succ(fqdn[14:-16], digits, carry_rollover)"]
 n1403 --> n1404
 n1405["denv"]
 n662 --> n1405
-n1406["UN-locode:US"]
+n1406["UN-locode:US .i.e. -cap"]
 n1405 --> n1406
 n1407["cnsseq:succ(fqdn[12:-16], digits, carry_rollover)"]
 n1406 --> n1407
@@ -2844,7 +2844,7 @@ n1421["seq:succ(fqdn[17:-16], digits, carry_rollover)"]
 n1420 --> n1421
 n1422["fastext"]
 n662 --> n1422
-n1423["GEO-names:US"]
+n1423["GEO-names:US .i.e. -cloud"]
 n1422 --> n1423
 n1424["apiseq:succ(fqdn[17:-16], digits, carry_rollover)"]
 n1423 --> n1424
@@ -2862,7 +2862,7 @@ n1430["seq:succ(fqdn[17:-16], digits, carry_rollover)"]
 n1429 --> n1430
 n1431["dp"]
 n662 --> n1431
-n1432["UN-locode:US"]
+n1432["UN-locode:US .i.e. -cmc"]
 n1431 --> n1432
 n1433["seq:succ(fqdn[7:-16], digits, carry_rollover)"]
 n1432 --> n1433
@@ -2922,39 +2922,39 @@ n1460["cnntcodebs5seq:succ(fqdn[11:-16], digits_lower, carry_rollover)"]
 n662 --> n1460
 n1461["ccspcg"]
 n662 --> n1461
-n1462["UN-locode:US"]
+n1462["UN-locode:US .i.e. -ch2"]
 n1461 --> n1462
 n1463["seq:succ(fqdn[11:-21], digits, carry_rollover)p"]
 n1462 --> n1463
-n1464["UN-locode:US"]
+n1464["UN-locode:US .i.e. -ext"]
 n1463 --> n1464
 n1465["vsgseq:succ(fqdn[3:-33], digits, carry_rollover)-denver"]
 n662 --> n1465
-n1466["UN-subdiv:US"]
+n1466["UN-subdiv:US .i.e. -co"]
 n1465 --> n1466
-n1467["GEO-names:US"]
+n1467["GEO-names:US .i.e. -denver"]
 n1466 --> n1467
 n1468["vsgseq:succ(fqdn[3:-31], digits, carry_rollover)-scotts"]
 n662 --> n1468
-n1469["GEO-classification:-ca"]
+n1469["GEO-classification:-ca .i.e. -ca"]
 n1468 --> n1469
 n1470["sfba"]
 n1469 --> n1470
 n1471["vsgseq:succ(fqdn[3:-35], digits, carry_rollover)-everett"]
 n662 --> n1471
-n1472["UN-subdiv:US"]
+n1472["UN-subdiv:US .i.e. -wa"]
 n1471 --> n1472
-n1473["GEO-names:US"]
+n1473["GEO-names:US .i.e. -seattle"]
 n1472 --> n1473
 n1474["vsgvnf"]
 n662 --> n1474
-n1475["UN-subdiv:US"]
+n1475["UN-subdiv:US .i.e. -mt"]
 n1474 --> n1475
 n1476["seq:succ(fqdn[10:-23], digits, carry_rollover)-yellow"]
 n1475 --> n1476
 n1477["syncomp"]
 n662 --> n1477
-n1478["UN-subdiv:US"]
+n1478["UN-subdiv:US .i.e. -mt"]
 n1477 --> n1478
 n1479["cseq:succ(fqdn[12:-20], digits, carry_rollover)01qi"]
 n1478 --> n1479
@@ -2964,11 +2964,11 @@ n1481["c"]
 n1480 --> n1481
 n1482["{ip0}-{ip1}-{ip2}-{ip3}"]
 n1481 --> n1482
-n1483["GEO-classification:.il"]
+n1483["GEO-classification:.il .i.e. .il"]
 n662 --> n1483
 n1484["nthlk"]
 n1483 --> n1484
-n1485["UN-locode:US"]
+n1485["UN-locode:US .i.e. .dgw"]
 n1484 --> n1485
 n1486["vl"]
 n1485 --> n1486
@@ -2992,19 +2992,19 @@ n1495["autodiscover"]
 n1494 --> n1495
 n1496["bo"]
 n1 --> n1496
-n1497["UN-subdiv:US"]
+n1497["UN-subdiv:US .i.e. .pa"]
 n1496 --> n1497
 n1498["comcastcntr"]
 n1497 --> n1498
 n1499["neto"]
 n1498 --> n1499
-n1500["UN-locode:US"]
+n1500["UN-locode:US .i.e. -nat"]
 n1499 --> n1500
 n1501["{ip3}"]
 n1500 --> n1501
 n1502["westchester"]
 n1497 --> n1502
-n1503["UN-locode:US"]
+n1503["UN-locode:US .i.e. .svi, .ing"]
 n1502 --> n1503
 n1504["digits@5:[100,100]for:1"]
 n1503 --> n1504
@@ -3150,9 +3150,9 @@ n1574["asseq:succ(fqdn[15:-32], digits, carry_rollover)-d"]
 n1573 --> n1574
 n1575["asseq:succ(fqdn[14:-32], digits, carry_rollover)-d"]
 n1573 --> n1575
-n1576["GEO-names:US"]
+n1576["GEO-names:US .i.e. .downingtown"]
 n1497 --> n1576
-n1577["UN-locode:US"]
+n1577["UN-locode:US .i.e. .mit"]
 n1576 --> n1577
 n1578["swseq:succ(fqdn[9:-34], digits, carry_rollover)"]
 n1577 --> n1578
@@ -3160,9 +3160,9 @@ n1579["eth2"]
 n1578 --> n1579
 n1580["digits@7:[1,1]for:1"]
 n1579 --> n1580
-n1581["UN-locode:US"]
+n1581["UN-locode:US .i.e. .ctc"]
 n1497 --> n1581
-n1582["UN-locode:US"]
+n1582["UN-locode:US .i.e. .svi"]
 n1581 --> n1582
 n1583["digits@5:[100,100]for:1"]
 n1582 --> n1583
@@ -3170,7 +3170,7 @@ n1584["sw2001seq:succ(fqdn[14:-24], digits_lower, carry_rollover)-d"]
 n1583 --> n1584
 n1585["cdnlab"]
 n1 --> n1585
-n1586["UN-locode:US"]
+n1586["UN-locode:US .i.e. .cmc"]
 n1585 --> n1586
 n1587["ipcdn"]
 n1586 --> n1587
@@ -3182,9 +3182,9 @@ n1590["{ip3}"]
 n1589 --> n1590
 n1591["seq:succ(fqdn[12:-23], digits, carry_rollover)"]
 n1588 --> n1591
-n1592["UN-locode:US"]
+n1592["UN-locode:US .i.e. .cdn"]
 n1586 --> n1592
-n1593["UN-locode:US"]
+n1593["UN-locode:US .i.e. -lab"]
 n1592 --> n1593
 n1594["seq:succ(fqdn[8:-23], digits, carry_rollover)"]
 n1593 --> n1594
@@ -3196,21 +3196,21 @@ n1597["odol"]
 n1586 --> n1597
 n1598["atsec"]
 n1597 --> n1598
-n1599["UN-locode:US"]
+n1599["UN-locode:US .i.e. -bdn"]
 n1598 --> n1599
 n1600["seq:succ(fqdn[15:-23], digits, carry_rollover)"]
 n1599 --> n1600
 n1601["maple"]
 n1586 --> n1601
-n1602["UN-locode:US"]
+n1602["UN-locode:US .i.e. -mem"]
 n1601 --> n1602
 n1603["seq:succ(fqdn[10:-23], digits, carry_rollover)"]
 n1602 --> n1603
 n1604["ndcwest"]
 n1 --> n1604
-n1605["UN-subdiv:US"]
+n1605["UN-subdiv:US .i.e. .co"]
 n1604 --> n1605
-n1606["UN-locode:US"]
+n1606["UN-locode:US .i.e. .cmc"]
 n1605 --> n1606
 n1607["slbv103a"]
 n1606 --> n1607
@@ -3242,7 +3242,7 @@ n1620["d"]
 n1619 --> n1620
 n1621["snat{ip3}"]
 n1620 --> n1621
-n1622["UN-locode:US"]
+n1622["UN-locode:US .i.e. .wdv, .svi"]
 n1606 --> n1622
 n1623["digits@5:[100,100]for:1"]
 n1622 --> n1623
@@ -3328,9 +3328,9 @@ n1663["g2"]
 n1606 --> n1663
 n1664["digits@5:[1,1]for:1"]
 n1663 --> n1664
-n1665["UN-locode:US"]
+n1665["UN-locode:US .i.e. -cld"]
 n1664 --> n1665
-n1666["UN-locode:US"]
+n1666["UN-locode:US .i.e. -cld"]
 n1665 --> n1666
 n1667["swseq:succ(fqdn[15:-29], digits, carry_rollover)-d"]
 n1666 --> n1667
@@ -3350,7 +3350,7 @@ n1674["sw176seq:succ(fqdn[5:-29], digits_lower, carry_rollover)-d"]
 n1606 --> n1674
 n1675["sw177seq:succ(fqdn[5:-29], digits_lower, carry_rollover)-d"]
 n1606 --> n1675
-n1676["GEO-names:US"]
+n1676["GEO-names:US .i.e. .potomac"]
 n1605 --> n1676
 n1677["copdcdlctwsseq:succ(fqdn[11:-31], digits, carry_rollover)"]
 n1676 --> n1677
@@ -3372,7 +3372,7 @@ n1685["digits@8:[20,20]for:1"]
 n1684 --> n1685
 n1686["asseq:succ(fqdn[15:-33], digits, carry_rollover)-d"]
 n1685 --> n1686
-n1687["UN-locode:US"]
+n1687["UN-locode:US .i.e. .eas, .svi"]
 n1676 --> n1687
 n1688["digits@5:[100,100]for:1"]
 n1687 --> n1688
@@ -3382,7 +3382,7 @@ n1690["sw2041seq:succ(fqdn[14:-33], digits_lower, carry_rollover)-d"]
 n1688 --> n1690
 n1691["po"]
 n1687 --> n1691
-n1692["GEO-names:US"]
+n1692["GEO-names:US .i.e. -shaw, -rogers"]
 n1691 --> n1692
 n1693["wscache"]
 n1692 --> n1693
@@ -3466,11 +3466,11 @@ n1732["sseq:succ(fqdn[1:-31], digits, carry_rollover)-d"]
 n1731 --> n1732
 n1733["ccal"]
 n1 --> n1733
-n1734["GEO-classification:.ca"]
+n1734["GEO-classification:.ca .i.e. .ca"]
 n1733 --> n1734
 n1735["goldcenterdr"]
 n1734 --> n1735
-n1736["UN-locode:US"]
+n1736["UN-locode:US .i.e. .rio"]
 n1735 --> n1736
 n1737["stor"]
 n1736 --> n1737
@@ -3490,7 +3490,7 @@ n1744["rnch"]
 n1743 --> n1744
 n1745["seq:succ(fqdn[16:-33], digits, carry_rollover)"]
 n1744 --> n1745
-n1746["GEO-names:US"]
+n1746["GEO-names:US .i.e. .fresno, .sacramento, .modesto"]
 n1734 --> n1746
 n1747["ge"]
 n1746 --> n1747
@@ -3502,7 +3502,7 @@ n1750["capbkupn"]
 n1749 --> n1750
 n1751["ccal"]
 n1750 --> n1751
-n1752["UN-locode:US"]
+n1752["UN-locode:US .i.e. -frs"]
 n1751 --> n1752
 n1753["seq:succ(fqdn[25:-27], digits, carry_rollover)"]
 n1752 --> n1753
@@ -3510,7 +3510,7 @@ n1754["seq:succ(fqdn[26:-27], digits, carry_rollover)"]
 n1752 --> n1754
 n1755["capdpi"]
 n1749 --> n1755
-n1756["UN-locode:US"]
+n1756["UN-locode:US .i.e. -sac"]
 n1755 --> n1756
 n1757["znseq:succ(fqdn[20:-33], digits, carry_rollover)-1"]
 n1756 --> n1757
@@ -3526,7 +3526,7 @@ n1762["vip2"]
 n1746 --> n1762
 n1763["capdpi"]
 n1762 --> n1763
-n1764["UN-locode:US"]
+n1764["UN-locode:US .i.e. -sac"]
 n1763 --> n1764
 n1765["znseq:succ(fqdn[18:-38], digits, carry_rollover)-1"]
 n1764 --> n1765
@@ -3542,7 +3542,7 @@ n1770["vip1"]
 n1746 --> n1770
 n1771["capdpi"]
 n1770 --> n1771
-n1772["UN-locode:US"]
+n1772["UN-locode:US .i.e. -sac"]
 n1771 --> n1772
 n1773["znseq:succ(fqdn[18:-38], digits, carry_rollover)-1"]
 n1772 --> n1773
@@ -3554,9 +3554,9 @@ n1776["acr04"]
 n1775 --> n1776
 n1777["mgmt"]
 n1 --> n1777
-n1778["GEO-classification:.ca"]
+n1778["GEO-classification:.ca .i.e. .ca"]
 n1777 --> n1778
-n1779["GEO-names:US"]
+n1779["GEO-names:US .i.e. .sacramento, .hayward, .sunnyvale"]
 n1778 --> n1779
 n1780["cnxx"]
 n1779 --> n1780
@@ -3620,9 +3620,9 @@ n1809["11greatoaks"]
 n1778 --> n1809
 n1810["snjucaclsseq:succ(fqdn[9:-32], digits, carry_rollover)"]
 n1809 --> n1810
-n1811["UN-subdiv:US"]
+n1811["UN-subdiv:US .i.e. .nm, .nc, .co"]
 n1777 --> n1811
-n1812["GEO-names:US"]
+n1812["GEO-names:US .i.e. .englewood, .ashburn, .mckeesport"]
 n1811 --> n1812
 n1813["cnxx"]
 n1812 --> n1813
@@ -3724,7 +3724,7 @@ n1861["dnvrco26sseq:succ(fqdn[14:-33], digits, carry_rollover)"]
 n1860 --> n1861
 n1862["dnvrco26wseq:succ(fqdn[14:-33], digits, carry_rollover)"]
 n1860 --> n1862
-n1863["UN-locode:US"]
+n1863["UN-locode:US .i.e. .cmc, .tcc"]
 n1811 --> n1863
 n1864["cnxx"]
 n1863 --> n1864
@@ -3930,7 +3930,7 @@ n1964["cnxx"]
 n1963 --> n1964
 n1965["cyvlkyadwseq:succ(fqdn[14:-25], digits, carry_rollover)"]
 n1964 --> n1965
-n1966["GEO-classification:.il"]
+n1966["GEO-classification:.il .i.e. .il"]
 n1777 --> n1966
 n1967["350ecermak"]
 n1966 --> n1967
@@ -3938,7 +3938,7 @@ n1968["cnxx"]
 n1967 --> n1968
 n1969["chcgildtsseq:succ(fqdn[14:-31], digits, carry_rollover)"]
 n1968 --> n1969
-n1970["GEO-names:US"]
+n1970["GEO-names:US .i.e. .elmhurst, .chicago, .northlake"]
 n1966 --> n1970
 n1971["cnxx"]
 n1970 --> n1971
@@ -3982,11 +3982,11 @@ n1990["lchnpqeqsseq:succ(fqdn[14:-29], digits, carry_rollover)"]
 n1989 --> n1990
 n1991["bverton"]
 n1 --> n1991
-n1992["UN-subdiv:US"]
+n1992["UN-subdiv:US .i.e. .wa, .or"]
 n1991 --> n1992
-n1993["GEO-names:US"]
+n1993["GEO-names:US .i.e. .eugene, .longview, .troutdale"]
 n1992 --> n1993
-n1994["UN-locode:US"]
+n1994["UN-locode:US .i.e. .rio"]
 n1993 --> n1994
 n1995["storacc"]
 n1994 --> n1995
@@ -4008,7 +4008,7 @@ n2003["content"]
 n1993 --> n2003
 n2004["pegenc"]
 n2003 --> n2004
-n2005["UN-locode:US"]
+n2005["UN-locode:US .i.e. -bev"]
 n2004 --> n2005
 n2006["wfalls"]
 n2005 --> n2006
@@ -4042,7 +4042,7 @@ n2020["digits@7:[4,4]for:1"]
 n2019 --> n2020
 n2021["seq:succ(fqdn[9:-38], digits, carry_rollover)-rur02"]
 n2020 --> n2021
-n2022["UN-locode:US"]
+n2022["UN-locode:US .i.e. .cpe"]
 n1992 --> n2022
 n2023["ce"]
 n2022 --> n2023
@@ -4066,9 +4066,9 @@ n2032["sur01"]
 n2031 --> n2032
 n2033["panjde"]
 n1 --> n2033
-n2034["UN-subdiv:US"]
+n2034["UN-subdiv:US .i.e. .de, .nj, .pa"]
 n2033 --> n2034
-n2035["GEO-names:US"]
+n2035["GEO-names:US .i.e. .lebanon, .newcastle, .plainfield"]
 n2034 --> n2035
 n2036["ge"]
 n2035 --> n2036
@@ -4080,7 +4080,7 @@ n2039["digits@7:[1,1]for:1"]
 n2038 --> n2039
 n2040["seq:succ(fqdn[9:-38], digits, carry_rollover)-sr01"]
 n2039 --> n2040
-n2041["UN-locode:US"]
+n2041["UN-locode:US .i.e. -ads, -uet, -mcv"]
 n2037 --> n2041
 n2042["encseq:succ(fqdn[12:-30], digits, carry_rollover)"]
 n2041 --> n2042
@@ -4132,11 +4132,11 @@ n2065["seq:succ(fqdn[5:-35], digits, carry_rollover)-ur01"]
 n2037 --> n2065
 n2066["seq:succ(fqdn[5:-37], digits, carry_rollover)-ur02"]
 n2037 --> n2066
-n2067["UN-locode:US"]
+n2067["UN-locode:US .i.e. .cdn"]
 n2035 --> n2067
 n2068["ec"]
 n2067 --> n2068
-n2069["UN-locode:US"]
+n2069["UN-locode:US .i.e. -pan, -njs"]
 n2068 --> n2069
 n2070["digits@7:[3,14]for:7"]
 n2069 --> n2070
@@ -4222,11 +4222,11 @@ n2110["digits@5:[6,6]for:1"]
 n2109 --> n2110
 n2111["seq:succ(fqdn[5:-34], digits, carry_numeric)-ur01"]
 n2110 --> n2111
-n2112["UN-locode:US"]
+n2112["UN-locode:US .i.e. .cdn"]
 n2108 --> n2112
 n2113["ec"]
 n2112 --> n2113
-n2114["UN-locode:US"]
+n2114["UN-locode:US .i.e. -njs"]
 n2113 --> n2114
 n2115["digits@7:[2,2]for:1"]
 n2114 --> n2115
@@ -4238,25 +4238,25 @@ n2118["ge"]
 n2117 --> n2118
 n2119["digits@5:[0,0]for:1"]
 n2118 --> n2119
-n2120["UN-locode:US"]
+n2120["UN-locode:US .i.e. -mcv"]
 n2119 --> n2120
 n2121["encseq:succ(fqdn[12:-35], digits, carry_rollover)"]
 n2120 --> n2121
-n2122["UN-locode:US"]
+n2122["UN-locode:US .i.e. .cdn"]
 n2117 --> n2122
 n2123["ec"]
 n2122 --> n2123
-n2124["UN-locode:US"]
+n2124["UN-locode:US .i.e. -njs"]
 n2123 --> n2124
 n2125["seq:succ(fqdn[11:-35], digits, carry_rollover)"]
 n2124 --> n2125
 n2126["eastwindsor"]
 n2034 --> n2126
-n2127["UN-locode:US"]
+n2127["UN-locode:US .i.e. .cdn"]
 n2126 --> n2127
 n2128["ec"]
 n2127 --> n2128
-n2129["UN-locode:US"]
+n2129["UN-locode:US .i.e. -njs"]
 n2128 --> n2129
 n2130["seq:succ(fqdn[11:-34], digits, carry_rollover)"]
 n2129 --> n2130
@@ -4276,7 +4276,7 @@ n2137["digits@5:[0,8]for:3"]
 n2136 --> n2137
 n2138["seq:succ(fqdn[5:-37], digits, carry_rollover)-ur01"]
 n2137 --> n2138
-n2139["UN-locode:US"]
+n2139["UN-locode:US .i.e. -mcv"]
 n2137 --> n2139
 n2140["qamseq:succ(fqdn[12:-32], digits, carry_rollover)"]
 n2139 --> n2140
@@ -4290,7 +4290,7 @@ n2144["digits@6:[1,1]for:1"]
 n2143 --> n2144
 n2145["ssagseq:succ(fqdn[11:-31], digits, carry_rollover)"]
 n2144 --> n2145
-n2146["UN-locode:US"]
+n2146["UN-locode:US .i.e. .cpe"]
 n2034 --> n2146
 n2147["ce"]
 n2146 --> n2147
@@ -4328,11 +4328,11 @@ n2163["digits@5:[8,8]for:1"]
 n2162 --> n2163
 n2164["seq:succ(fqdn[5:-34], digits, carry_rollover)-ur01"]
 n2163 --> n2164
-n2165["UN-locode:US"]
+n2165["UN-locode:US .i.e. .cdn"]
 n2161 --> n2165
 n2166["ec"]
 n2165 --> n2166
-n2167["UN-locode:US"]
+n2167["UN-locode:US .i.e. -pan"]
 n2166 --> n2167
 n2168["digits@7:[2,2]for:1"]
 n2167 --> n2168
@@ -4348,11 +4348,11 @@ n2173["seq:succ(fqdn[7:-38], digits, carry_rollover)-ur02"]
 n2172 --> n2173
 n2174["ivyland"]
 n2034 --> n2174
-n2175["UN-locode:US"]
+n2175["UN-locode:US .i.e. .cdn"]
 n2174 --> n2175
 n2176["ec"]
 n2175 --> n2176
-n2177["UN-locode:US"]
+n2177["UN-locode:US .i.e. -pan"]
 n2176 --> n2177
 n2178["digits@7:[4,4]for:1"]
 n2177 --> n2178
@@ -4366,11 +4366,11 @@ n2182["ar03"]
 n2181 --> n2182
 n2183["wayneave"]
 n2034 --> n2183
-n2184["UN-locode:US"]
+n2184["UN-locode:US .i.e. .cdn"]
 n2183 --> n2184
 n2185["ec"]
 n2184 --> n2185
-n2186["UN-locode:US"]
+n2186["UN-locode:US .i.e. -pan"]
 n2185 --> n2186
 n2187["digits@7:[1,1]for:1"]
 n2186 --> n2187
@@ -4382,7 +4382,7 @@ n2190["ge"]
 n2189 --> n2190
 n2191["digits@5:[0,1]for:2"]
 n2190 --> n2191
-n2192["UN-locode:US"]
+n2192["UN-locode:US .i.e. -ads"]
 n2191 --> n2192
 n2193["dmseq:succ(fqdn[11:-34], digits, carry_rollover)"]
 n2192 --> n2193
@@ -4394,7 +4394,7 @@ n2196["ge"]
 n2195 --> n2196
 n2197["digits@5:[1,1]for:1"]
 n2196 --> n2197
-n2198["UN-locode:US"]
+n2198["UN-locode:US .i.e. -ads"]
 n2197 --> n2198
 n2199["pegseq:succ(fqdn[12:-35], digits, carry_rollover)"]
 n2198 --> n2199
@@ -4426,7 +4426,7 @@ n2212["soagseq:succ(fqdn[4:-28], digits, carry_rollover)"]
 n2211 --> n2212
 n2213["ewr1"]
 n1 --> n2213
-n2214["UN-locode:US"]
+n2214["UN-locode:US .i.e. .nlb"]
 n2213 --> n2214
 n2215["seca"]
 n2214 --> n2215
@@ -4442,7 +4442,7 @@ n2220["digits@5:[2,2]for:1"]
 n2219 --> n2220
 n2221["fcm1"]
 n1 --> n2221
-n2222["UN-locode:US"]
+n2222["UN-locode:US .i.e. .nlb"]
 n2221 --> n2222
 n2223["twin"]
 n2222 --> n2223
@@ -4450,7 +4450,7 @@ n2224["cnsseq:succ(fqdn[8:-21], digits, carry_rollover)"]
 n2223 --> n2224
 n2225["mdw1"]
 n1 --> n2225
-n2226["UN-locode:US"]
+n2226["UN-locode:US .i.e. .nlb"]
 n2225 --> n2226
 n2227["chic"]
 n2226 --> n2227
@@ -4458,19 +4458,19 @@ n2228["cnsseq:succ(fqdn[8:-21], digits, carry_rollover)"]
 n2227 --> n2228
 n2229["pdx1"]
 n1 --> n2229
-n2230["UN-locode:US"]
+n2230["UN-locode:US .i.e. .nlb, .ecd"]
 n2229 --> n2230
 n2231["bvrt"]
 n2230 --> n2231
 n2232["cnsseq:succ(fqdn[8:-21], digits, carry_rollover)"]
 n2231 --> n2232
-n2233["UN-locode:US"]
+n2233["UN-locode:US .i.e. -ent"]
 n2231 --> n2233
 n2234["cnsseq:succ(fqdn[12:-21], digits, carry_rollover)"]
 n2233 --> n2234
 n2235["rsw1"]
 n1 --> n2235
-n2236["UN-locode:US"]
+n2236["UN-locode:US .i.e. .nlb"]
 n2235 --> n2236
 n2237["npls"]
 n2236 --> n2237
@@ -4478,19 +4478,19 @@ n2238["cnsseq:succ(fqdn[8:-21], digits, carry_rollover)"]
 n2237 --> n2238
 n2239["slc1"]
 n1 --> n2239
-n2240["UN-locode:US"]
+n2240["UN-locode:US .i.e. .nlb, .ecd"]
 n2239 --> n2240
 n2241["utah"]
 n2240 --> n2241
 n2242["cnsseq:succ(fqdn[8:-21], digits, carry_rollover)"]
 n2241 --> n2242
-n2243["UN-locode:US"]
+n2243["UN-locode:US .i.e. -ent"]
 n2241 --> n2243
 n2244["cnsseq:succ(fqdn[12:-21], digits, carry_rollover)"]
 n2243 --> n2244
 n2245["pit1"]
 n1 --> n2245
-n2246["UN-locode:US"]
+n2246["UN-locode:US .i.e. .nlb"]
 n2245 --> n2246
 n2247["pitt"]
 n2246 --> n2247
@@ -4498,7 +4498,7 @@ n2248["cnsseq:succ(fqdn[8:-21], digits, carry_rollover)"]
 n2247 --> n2248
 n2249["dca1"]
 n1 --> n2249
-n2250["UN-locode:US"]
+n2250["UN-locode:US .i.e. .nlb"]
 n2249 --> n2250
 n2251["mana"]
 n2250 --> n2251
@@ -4506,7 +4506,7 @@ n2252["cnsseq:succ(fqdn[8:-21], digits, carry_rollover)"]
 n2251 --> n2252
 n2253["fll1"]
 n1 --> n2253
-n2254["UN-locode:US"]
+n2254["UN-locode:US .i.e. .nlb"]
 n2253 --> n2254
 n2255["mimi"]
 n2254 --> n2255
@@ -4522,7 +4522,7 @@ n2260["digits@5:[2,2]for:1"]
 n2259 --> n2260
 n2261["bos1"]
 n1 --> n2261
-n2262["UN-locode:US"]
+n2262["UN-locode:US .i.e. .nlb"]
 n2261 --> n2262
 n2263["chlm"]
 n2262 --> n2263
@@ -4530,7 +4530,7 @@ n2264["cnsseq:succ(fqdn[8:-21], digits, carry_rollover)"]
 n2263 --> n2264
 n2265["tlh1"]
 n1 --> n2265
-n2266["UN-locode:US"]
+n2266["UN-locode:US .i.e. .nlb"]
 n2265 --> n2266
 n2267["tall"]
 n2266 --> n2267
@@ -4546,9 +4546,9 @@ n2272["digits@5:[2,2]for:1"]
 n2271 --> n2272
 n2273["sbend"]
 n1 --> n2273
-n2274["UN-subdiv:US"]
+n2274["UN-subdiv:US .i.e. .in"]
 n2273 --> n2274
-n2275["GEO-names:US"]
+n2275["GEO-names:US .i.e. .mishawaka"]
 n2274 --> n2275
 n2276["ge"]
 n2275 --> n2276
@@ -4570,9 +4570,9 @@ n2284["rerseq:succ(fqdn[3:-31], digits, carry_rollover)"]
 n2275 --> n2284
 n2285["westfl"]
 n1 --> n2285
-n2286["UN-subdiv:US"]
+n2286["UN-subdiv:US .i.e. .fl"]
 n2285 --> n2286
-n2287["GEO-names:US"]
+n2287["GEO-names:US .i.e. .venice, .sarasota"]
 n2286 --> n2287
 n2288["ge"]
 n2287 --> n2288
@@ -4590,11 +4590,11 @@ n2294["seq:succ(fqdn[11:-34], digits, carry_rollover)-ur05"]
 n2291 --> n2294
 n2295["seq:succ(fqdn[5:-34], digits, carry_rollover)-ur01"]
 n2289 --> n2295
-n2296["UN-locode:US"]
+n2296["UN-locode:US .i.e. .cdn"]
 n2287 --> n2296
 n2297["ec"]
 n2296 --> n2297
-n2298["UN-locode:US"]
+n2298["UN-locode:US .i.e. -wes"]
 n2297 --> n2298
 n2299["digits@7:[1,1]for:1"]
 n2298 --> n2299
@@ -4618,7 +4618,7 @@ n2308["seq:succ(fqdn[3:-34], digits, carry_numeric)-ar03"]
 n2307 --> n2308
 n2309["prod"]
 n1 --> n2309
-n2310["UN-locode:US"]
+n2310["UN-locode:US .i.e. .cdn"]
 n2309 --> n2310
 n2311["maple"]
 n2310 --> n2311
@@ -4626,13 +4626,13 @@ n2312["po"]
 n2311 --> n2312
 n2313["seq:succ(fqdn[13:-17], digits, carry_rollover)"]
 n2312 --> n2313
-n2314["UN-subdiv:US"]
+n2314["UN-subdiv:US .i.e. -as"]
 n2311 --> n2314
 n2315["seq:succ(fqdn[13:-17], digits, carry_rollover)"]
 n2314 --> n2315
-n2316["UN-locode:US"]
+n2316["UN-locode:US .i.e. -ch2, -mem"]
 n2311 --> n2316
-n2317["UN-subdiv:US"]
+n2317["UN-subdiv:US .i.e. -as"]
 n2316 --> n2317
 n2318["seq:succ(fqdn[17:-17], digits, carry_rollover)"]
 n2317 --> n2318
@@ -4640,11 +4640,11 @@ n2319["seq:succ(fqdn[14:-17], digits, carry_rollover)"]
 n2316 --> n2319
 n2320["michigan"]
 n1 --> n2320
-n2321["UN-subdiv:US"]
+n2321["UN-subdiv:US .i.e. .mi"]
 n2320 --> n2321
-n2322["GEO-names:US"]
+n2322["GEO-names:US .i.e. .southfield, .taylor, .flint"]
 n2321 --> n2322
-n2323["UN-locode:US"]
+n2323["UN-locode:US .i.e. .cdn, .mcv"]
 n2322 --> n2323
 n2324["d2aseq:succ(fqdn[7:-31], digits, carry_rollover)"]
 n2323 --> n2324
@@ -4656,7 +4656,7 @@ n2327["encseq:succ(fqdn[7:-32], digits, carry_rollover)"]
 n2323 --> n2327
 n2328["ec"]
 n2323 --> n2328
-n2329["UN-locode:US"]
+n2329["UN-locode:US .i.e. -mic"]
 n2328 --> n2329
 n2330["digits@7:[3,3]for:1"]
 n2329 --> n2330
@@ -4672,7 +4672,7 @@ n2335["fe"]
 n2322 --> n2335
 n2336["digits@5:[1,1]for:1"]
 n2335 --> n2336
-n2337["UN-locode:US"]
+n2337["UN-locode:US .i.e. -mcv"]
 n2336 --> n2337
 n2338["d2aseq:succ(fqdn[12:-31], digits, carry_rollover)"]
 n2337 --> n2338
@@ -4698,7 +4698,7 @@ n2348["ge"]
 n2322 --> n2348
 n2349["digits@5:[1,2]for:2"]
 n2348 --> n2349
-n2350["UN-locode:US"]
+n2350["UN-locode:US .i.e. -mcv"]
 n2349 --> n2350
 n2351["semseq:succ(fqdn[12:-31], digits, carry_rollover)"]
 n2350 --> n2351
@@ -4726,13 +4726,13 @@ n2362["odol"]
 n2322 --> n2362
 n2363["atsec"]
 n2362 --> n2363
-n2364["UN-locode:US"]
+n2364["UN-locode:US .i.e. -mic"]
 n2363 --> n2364
 n2365["seq:succ(fqdn[15:-32], digits, carry_rollover)"]
 n2364 --> n2365
 n2366["westlandhe"]
 n2321 --> n2366
-n2367["UN-locode:US"]
+n2367["UN-locode:US .i.e. .mcv"]
 n2366 --> n2367
 n2368["d2aseq:succ(fqdn[7:-35], digits, carry_rollover)"]
 n2367 --> n2368
@@ -4742,7 +4742,7 @@ n2370["fe"]
 n2366 --> n2370
 n2371["digits@5:[1,1]for:1"]
 n2370 --> n2371
-n2372["UN-locode:US"]
+n2372["UN-locode:US .i.e. -mcv"]
 n2371 --> n2372
 n2373["d2aseq:succ(fqdn[12:-35], digits, carry_rollover)"]
 n2372 --> n2373
@@ -4752,7 +4752,7 @@ n2375["digits@5:[1,3]for:2"]
 n2374 --> n2375
 n2376["seq:succ(fqdn[5:-40], digits, carry_rollover)-ur02"]
 n2375 --> n2376
-n2377["UN-locode:US"]
+n2377["UN-locode:US .i.e. -mcv"]
 n2375 --> n2377
 n2378["adsseq:succ(fqdn[12:-35], digits, carry_rollover)"]
 n2377 --> n2378
@@ -4776,13 +4776,13 @@ n2387["ge"]
 n2386 --> n2387
 n2388["digits@5:[1,1]for:1"]
 n2387 --> n2388
-n2389["UN-locode:US"]
+n2389["UN-locode:US .i.e. -mcv"]
 n2388 --> n2389
 n2390["encseq:succ(fqdn[12:-36], digits, carry_rollover)"]
 n2389 --> n2390
 n2391["semseq:succ(fqdn[12:-36], digits, carry_rollover)"]
 n2389 --> n2391
-n2392["UN-locode:US"]
+n2392["UN-locode:US .i.e. .mcv"]
 n2386 --> n2392
 n2393["encseq:succ(fqdn[7:-36], digits, carry_rollover)"]
 n2392 --> n2393
@@ -4792,7 +4792,7 @@ n2395["fe"]
 n2394 --> n2395
 n2396["digits@5:[1,1]for:1"]
 n2395 --> n2396
-n2397["UN-locode:US"]
+n2397["UN-locode:US .i.e. -mcv"]
 n2396 --> n2397
 n2398["d2aseq:succ(fqdn[12:-34], digits, carry_rollover)"]
 n2397 --> n2398
@@ -4812,19 +4812,19 @@ n2405["sagseq:succ(fqdn[3:-36], digits, carry_rollover)"]
 n2399 --> n2405
 n2406["stclairshors"]
 n2321 --> n2406
-n2407["UN-locode:US"]
+n2407["UN-locode:US .i.e. .mcv"]
 n2406 --> n2407
 n2408["d2aseq:succ(fqdn[7:-37], digits, carry_rollover)"]
 n2407 --> n2408
 n2409["royaloak"]
 n2321 --> n2409
-n2410["UN-locode:US"]
+n2410["UN-locode:US .i.e. .mcv"]
 n2409 --> n2410
 n2411["encseq:succ(fqdn[7:-33], digits, carry_rollover)"]
 n2410 --> n2411
 n2412["sagseq:succ(fqdn[3:-33], digits, carry_rollover)"]
 n2409 --> n2412
-n2413["UN-locode:US"]
+n2413["UN-locode:US .i.e. .cpe"]
 n2321 --> n2413
 n2414["ce"]
 n2413 --> n2414
@@ -4836,7 +4836,7 @@ n2417["hllemiseq:succ(fqdn[9:-31], digits, carry_rollover)01w"]
 n2414 --> n2417
 n2418["tus1"]
 n1 --> n2418
-n2419["UN-locode:US"]
+n2419["UN-locode:US .i.e. .nlb"]
 n2418 --> n2419
 n2420["pima"]
 n2419 --> n2420
@@ -4852,7 +4852,7 @@ n2425["digits@5:[2,2]for:1"]
 n2424 --> n2425
 n2426["abq1"]
 n1 --> n2426
-n2427["UN-locode:US"]
+n2427["UN-locode:US .i.e. .nlb"]
 n2426 --> n2427
 n2428["albu"]
 n2427 --> n2428
@@ -4868,7 +4868,7 @@ n2433["digits@5:[2,2]for:1"]
 n2432 --> n2433
 n2434["mci1"]
 n1 --> n2434
-n2435["UN-locode:US"]
+n2435["UN-locode:US .i.e. .nlb"]
 n2434 --> n2435
 n2436["indp"]
 n2435 --> n2436
@@ -4934,7 +4934,7 @@ n2466["seq:succ(fqdn[10:-26], digits, carry_rollover)-c1"]
 n2465 --> n2466
 n2467["sfba"]
 n1 --> n2467
-n2468["GEO-classification:.ca"]
+n2468["GEO-classification:.ca .i.e. .ca"]
 n2467 --> n2468
 n2469["sanjose"]
 n2468 --> n2469
@@ -4942,7 +4942,7 @@ n2470["siga"]
 n2469 --> n2470
 n2471["adcm"]
 n2470 --> n2471
-n2472["UN-locode:US"]
+n2472["UN-locode:US .i.e. -vip"]
 n2471 --> n2472
 n2473["seq:succ(fqdn[14:-28], digits, carry_numeric)"]
 n2472 --> n2473
@@ -4950,7 +4950,7 @@ n2474["sigb"]
 n2469 --> n2474
 n2475["adcm"]
 n2474 --> n2475
-n2476["UN-locode:US"]
+n2476["UN-locode:US .i.e. -vip"]
 n2475 --> n2476
 n2477["seq:succ(fqdn[14:-28], digits, carry_numeric)"]
 n2476 --> n2477
@@ -4962,15 +4962,15 @@ n2480["rerseq:succ(fqdn[8:-28], digits, carry_rollover)"]
 n2479 --> n2480
 n2481["seq:succ(fqdn[6:-35], digits, carry_rollover)-rur201"]
 n2479 --> n2481
-n2482["UN-locode:US"]
+n2482["UN-locode:US .i.e. .cdn"]
 n2469 --> n2482
 n2483["ec"]
 n2482 --> n2483
-n2484["UN-locode:US"]
+n2484["UN-locode:US .i.e. -sfb"]
 n2483 --> n2484
 n2485["seq:succ(fqdn[11:-28], digits, carry_rollover)"]
 n2484 --> n2485
-n2486["GEO-names:US"]
+n2486["GEO-names:US .i.e. .pleasanton, .hayward, .pittsburg"]
 n2468 --> n2486
 n2487["vptshost1vmseq:succ(fqdn[11:-28], digits, carry_rollover)"]
 n2486 --> n2487
@@ -4980,17 +4980,17 @@ n2489["digits@5:[2,2]for:1"]
 n2488 --> n2489
 n2490["rerseq:succ(fqdn[8:-28], digits, carry_rollover)"]
 n2489 --> n2490
-n2491["UN-locode:US"]
+n2491["UN-locode:US .i.e. .cdn"]
 n2486 --> n2491
-n2492["UN-locode:US"]
+n2492["UN-locode:US .i.e. -rat"]
 n2491 --> n2492
-n2493["UN-locode:US"]
+n2493["UN-locode:US .i.e. -sfb"]
 n2492 --> n2493
 n2494["seq:succ(fqdn[12:-28], digits, carry_rollover)"]
 n2493 --> n2494
 n2495["ec"]
 n2491 --> n2495
-n2496["UN-locode:US"]
+n2496["UN-locode:US .i.e. -sfb"]
 n2495 --> n2496
 n2497["seq:succ(fqdn[11:-28], digits, carry_rollover)"]
 n2496 --> n2497
@@ -5010,7 +5010,7 @@ n2504["capbkupn"]
 n2503 --> n2504
 n2505["sfba"]
 n2504 --> n2505
-n2506["UN-locode:US"]
+n2506["UN-locode:US .i.e. -ple"]
 n2505 --> n2506
 n2507["seq:succ(fqdn[25:-31], digits, carry_rollover)"]
 n2506 --> n2507
@@ -5026,7 +5026,7 @@ n2512["ptsseq:succ(fqdn[8:-31], digits, carry_rollover)"]
 n2511 --> n2512
 n2513["pegenc"]
 n2486 --> n2513
-n2514["UN-locode:US"]
+n2514["UN-locode:US .i.e. -nap"]
 n2513 --> n2514
 n2515["headend"]
 n2514 --> n2515
@@ -5042,11 +5042,11 @@ n2520["ar01"]
 n2519 --> n2520
 n2521["stenderway"]
 n2468 --> n2521
-n2522["UN-locode:US"]
+n2522["UN-locode:US .i.e. .cdn"]
 n2521 --> n2522
 n2523["tr"]
 n2522 --> n2523
-n2524["UN-locode:US"]
+n2524["UN-locode:US .i.e. -sfb"]
 n2523 --> n2524
 n2525["seq:succ(fqdn[11:-31], digits, carry_rollover)"]
 n2524 --> n2525
@@ -5060,21 +5060,21 @@ n2529["rerseq:succ(fqdn[9:-31], digits, carry_rollover)"]
 n2528 --> n2529
 n2530["vptshost1vmseq:succ(fqdn[11:-31], digits, carry_rollover)"]
 n2526 --> n2530
-n2531["UN-locode:US"]
+n2531["UN-locode:US .i.e. .cdn"]
 n2526 --> n2531
-n2532["UN-locode:US"]
+n2532["UN-locode:US .i.e. -rat"]
 n2531 --> n2532
-n2533["UN-locode:US"]
+n2533["UN-locode:US .i.e. -sfb"]
 n2532 --> n2533
 n2534["seq:succ(fqdn[12:-31], digits, carry_rollover)"]
 n2533 --> n2534
 n2535["ec"]
 n2531 --> n2535
-n2536["UN-locode:US"]
+n2536["UN-locode:US .i.e. -sfb"]
 n2535 --> n2536
 n2537["seq:succ(fqdn[11:-31], digits, carry_rollover)"]
 n2536 --> n2537
-n2538["UN-locode:US"]
+n2538["UN-locode:US .i.e. .cpe"]
 n2468 --> n2538
 n2539["ce"]
 n2538 --> n2539
@@ -5110,9 +5110,9 @@ n2554["digits@8:[25,25]for:1"]
 n2553 --> n2554
 n2555["seq:succ(fqdn[14:-33], digits, carry_rollover)-sur04"]
 n2554 --> n2555
-n2556["UN-subdiv:US"]
+n2556["UN-subdiv:US .i.e. .pa"]
 n2467 --> n2556
-n2557["UN-locode:US"]
+n2557["UN-locode:US .i.e. .cpe"]
 n2556 --> n2557
 n2558["ce"]
 n2557 --> n2558
@@ -5120,9 +5120,9 @@ n2559["phljpamtxseq:succ(fqdn[12:-25], digits, carry_rollover)w"]
 n2558 --> n2559
 n2560["cbone"]
 n1 --> n2560
-n2561["UN-subdiv:US"]
+n2561["UN-subdiv:US .i.e. .co, .ga"]
 n2560 --> n2561
-n2562["UN-locode:US"]
+n2562["UN-locode:US .i.e. .cmc"]
 n2561 --> n2562
 n2563["ge"]
 n2562 --> n2563
@@ -5172,9 +5172,9 @@ n2585["bu"]
 n2584 --> n2585
 n2586["jacksvil"]
 n1 --> n2586
-n2587["UN-subdiv:US"]
+n2587["UN-subdiv:US .i.e. .fl"]
 n2586 --> n2587
-n2588["GEO-names:US"]
+n2588["GEO-names:US .i.e. .southside, .westside"]
 n2587 --> n2588
 n2589["ge"]
 n2588 --> n2589
@@ -5196,11 +5196,11 @@ n2597["seq:succ(fqdn[3:-40], digits, carry_rollover)-rer103"]
 n2596 --> n2597
 n2598["deerwood"]
 n2587 --> n2598
-n2599["UN-locode:US"]
+n2599["UN-locode:US .i.e. .cdn"]
 n2598 --> n2599
 n2600["ec"]
 n2599 --> n2600
-n2601["UN-locode:US"]
+n2601["UN-locode:US .i.e. -jac"]
 n2600 --> n2601
 n2602["digits@7:[1,1]for:1"]
 n2601 --> n2602
@@ -5222,19 +5222,19 @@ n2610["seq:succ(fqdn[6:-38], digits, carry_rollover)-sur01"]
 n2609 --> n2610
 n2611["minn"]
 n1 --> n2611
-n2612["UN-subdiv:US"]
+n2612["UN-subdiv:US .i.e. .mn, .wi"]
 n2611 --> n2612
 n2613["whitebear"]
 n2612 --> n2613
 n2614["pegenc"]
 n2613 --> n2614
-n2615["UN-locode:US"]
+n2615["UN-locode:US .i.e. -wbl"]
 n2614 --> n2615
 n2616["studio"]
 n2615 --> n2616
 n2617["encseq:succ(fqdn[21:-30], digits, carry_rollover)"]
 n2616 --> n2617
-n2618["GEO-names:US"]
+n2618["GEO-names:US .i.e. .manitowoc, .sims, .roseville"]
 n2612 --> n2618
 n2619["rerseq:succ(fqdn[3:-30], digits, carry_rollover)"]
 n2618 --> n2619
@@ -5250,7 +5250,7 @@ n2624["digits@8:[35,35]for:1"]
 n2623 --> n2624
 n2625["digits@9:[0,0]for:1"]
 n2624 --> n2625
-n2626["UN-subdiv:US"]
+n2626["UN-subdiv:US .i.e. -ar"]
 n2625 --> n2626
 n2627["spseq:succ(fqdn[19:-30], digits, carry_rollover)"]
 n2626 --> n2627
@@ -5264,7 +5264,7 @@ n2631["ssagseq:succ(fqdn[11:-25], digits, carry_rollover)"]
 n2630 --> n2631
 n2632["ledseq:succ(fqdn[3:-36], digits, carry_rollover)-cbr02"]
 n2618 --> n2632
-n2633["UN-locode:US"]
+n2633["UN-locode:US .i.e. .cpe"]
 n2612 --> n2633
 n2634["ce"]
 n2633 --> n2634
@@ -5290,7 +5290,7 @@ n2644["cnsseq:succ(fqdn[8:-29], digits, carry_rollover)-eth0"]
 n2643 --> n2644
 n2645["digits@5:[2,2]for:1"]
 n2644 --> n2645
-n2646["UN-locode:US"]
+n2646["UN-locode:US .i.e. .nlb"]
 n2641 --> n2646
 n2647["lrck"]
 n2646 --> n2647
@@ -5298,7 +5298,7 @@ n2648["cnsseq:succ(fqdn[8:-21], digits, carry_rollover)"]
 n2647 --> n2648
 n2649["fat1"]
 n1 --> n2649
-n2650["UN-locode:US"]
+n2650["UN-locode:US .i.e. .rdc"]
 n2649 --> n2650
 n2651["fres"]
 n2650 --> n2651
@@ -5312,7 +5312,7 @@ n2655["cnsseq:succ(fqdn[8:-26], digits, carry_rollover)-eth0"]
 n2651 --> n2655
 n2656["malt"]
 n1 --> n2656
-n2657["UN-subdiv:US"]
+n2657["UN-subdiv:US .i.e. .tn, .ms"]
 n2656 --> n2657
 n2658["mendenhallrd"]
 n2657 --> n2658
@@ -5320,13 +5320,13 @@ n2659["memp"]
 n2658 --> n2659
 n2660["cnsseq:succ(fqdn[8:-33], digits, carry_rollover)"]
 n2659 --> n2660
-n2661["UN-locode:US"]
+n2661["UN-locode:US .i.e. .cpe"]
 n2657 --> n2661
 n2662["ce"]
 n2661 --> n2662
 n2663["seq:succ(fqdn[3:-27], digits_lower, carry_rollover)00w"]
 n2662 --> n2663
-n2664["GEO-names:US"]
+n2664["GEO-names:US .i.e. .meridian"]
 n2657 --> n2664
 n2665["et"]
 n2664 --> n2665
@@ -5356,9 +5356,9 @@ n2677["digits@5:[2,2]for:1"]
 n2676 --> n2677
 n2678["tusca"]
 n1 --> n2678
-n2679["UN-subdiv:US"]
+n2679["UN-subdiv:US .i.e. .al"]
 n2678 --> n2679
-n2680["GEO-names:US"]
+n2680["GEO-names:US .i.e. .gadsden"]
 n2679 --> n2680
 n2681["ge"]
 n2680 --> n2681
@@ -5382,21 +5382,21 @@ n2690["pbseq:succ(fqdn[10:-21], digits, carry_rollover)"]
 n2689 --> n2690
 n2691["lakecnty"]
 n1 --> n2691
-n2692["UN-subdiv:US"]
+n2692["UN-subdiv:US .i.e. .fl"]
 n2691 --> n2692
-n2693["GEO-names:US"]
+n2693["GEO-names:US .i.e. .leesburg"]
 n2692 --> n2693
-n2694["UN-locode:US"]
+n2694["UN-locode:US .i.e. .cdn"]
 n2693 --> n2694
 n2695["ec"]
 n2694 --> n2695
-n2696["UN-locode:US"]
+n2696["UN-locode:US .i.e. -lak"]
 n2695 --> n2696
 n2697["seq:succ(fqdn[11:-33], digits, carry_rollover)"]
 n2696 --> n2697
 n2698["dc02"]
 n1 --> n2698
-n2699["UN-subdiv:US"]
+n2699["UN-subdiv:US .i.e. .va"]
 n2698 --> n2699
 n2700["manassaspr"]
 n2699 --> n2700
@@ -5412,15 +5412,15 @@ n2705["dnssecseq:succ(fqdn[11:-32], digits, carry_rollover)b"]
 n2701 --> n2705
 n2706["indepen"]
 n1 --> n2706
-n2707["UN-subdiv:US"]
+n2707["UN-subdiv:US .i.e. .mo"]
 n2706 --> n2707
-n2708["GEO-names:US"]
+n2708["GEO-names:US .i.e. .independence"]
 n2707 --> n2708
-n2709["UN-locode:US"]
+n2709["UN-locode:US .i.e. .cdn"]
 n2708 --> n2709
 n2710["ec"]
 n2709 --> n2710
-n2711["UN-locode:US"]
+n2711["UN-locode:US .i.e. -ind"]
 n2710 --> n2711
 n2712["digits@7:[1,3]for:3"]
 n2711 --> n2712
@@ -5432,23 +5432,23 @@ n2715["digits@5:[1,1]for:1"]
 n2714 --> n2715
 n2716["seq:succ(fqdn[5:-53], digits, carry_rollover)-capdpi"]
 n2715 --> n2716
-n2717["UN-locode:US"]
+n2717["UN-locode:US .i.e. -ind"]
 n2716 --> n2717
-n2718["UN-locode:US"]
+n2718["UN-locode:US .i.e. -ind"]
 n2717 --> n2718
 n2719["digits@9:[1,1]for:1"]
 n2718 --> n2719
 n2720["seq:succ(fqdn[5:-55], digits, carry_rollover)-capbkup1"]
 n2715 --> n2720
-n2721["UN-locode:US"]
+n2721["UN-locode:US .i.e. -ind"]
 n2720 --> n2721
-n2722["UN-locode:US"]
+n2722["UN-locode:US .i.e. -ind"]
 n2721 --> n2722
 n2723["digits@9:[1,1]for:1"]
 n2722 --> n2723
 n2724["sanfran"]
 n1 --> n2724
-n2725["GEO-classification:.ca"]
+n2725["GEO-classification:.ca .i.e. .ca"]
 n2724 --> n2725
 n2726["sanjose"]
 n2725 --> n2726
@@ -5464,7 +5464,7 @@ n2731["cnsseq:succ(fqdn[8:-32], digits, carry_rollover)b"]
 n2727 --> n2731
 n2732["chatta"]
 n1 --> n2732
-n2733["UN-subdiv:US"]
+n2733["UN-subdiv:US .i.e. .tn"]
 n2732 --> n2733
 n2734["polymer"]
 n2733 --> n2734
@@ -5476,15 +5476,15 @@ n2737["rerseq:succ(fqdn[9:-30], digits, carry_rollover)"]
 n2736 --> n2737
 n2738["chrlstn"]
 n1 --> n2738
-n2739["UN-subdiv:US"]
+n2739["UN-subdiv:US .i.e. .sc"]
 n2738 --> n2739
 n2740["mtpleasant"]
 n2739 --> n2740
-n2741["UN-locode:US"]
+n2741["UN-locode:US .i.e. .cdn"]
 n2740 --> n2741
 n2742["ec"]
 n2741 --> n2742
-n2743["UN-locode:US"]
+n2743["UN-locode:US .i.e. -chr"]
 n2742 --> n2743
 n2744["digits@7:[1,1]for:1"]
 n2743 --> n2744
@@ -5492,7 +5492,7 @@ n2745["seq:succ(fqdn[15:-34], digits, carry_rollover)"]
 n2744 --> n2745
 n2746["naples"]
 n1 --> n2746
-n2747["UN-subdiv:US"]
+n2747["UN-subdiv:US .i.e. .fl"]
 n2746 --> n2747
 n2748["bonitasprngs"]
 n2747 --> n2748
@@ -5506,11 +5506,11 @@ n2752["hr03seq:succ(fqdn[4:-37], digits_lower, carry_rollover)-d"]
 n2748 --> n2752
 n2753["bonitasprings"]
 n2747 --> n2753
-n2754["UN-locode:US"]
+n2754["UN-locode:US .i.e. .cdn"]
 n2753 --> n2754
 n2755["ec"]
 n2754 --> n2755
-n2756["UN-locode:US"]
+n2756["UN-locode:US .i.e. -nap"]
 n2755 --> n2756
 n2757["digits@7:[2,2]for:1"]
 n2756 --> n2757
@@ -5518,17 +5518,17 @@ n2758["seq:succ(fqdn[15:-36], digits, carry_rollover)"]
 n2757 --> n2758
 n2759["beaudr"]
 n2747 --> n2759
-n2760["UN-locode:US"]
+n2760["UN-locode:US .i.e. .cdn"]
 n2759 --> n2760
 n2761["ec"]
 n2760 --> n2761
-n2762["UN-locode:US"]
+n2762["UN-locode:US .i.e. -nap"]
 n2761 --> n2762
 n2763["digits@7:[1,1]for:1"]
 n2762 --> n2763
 n2764["seq:succ(fqdn[15:-29], digits, carry_rollover)"]
 n2763 --> n2764
-n2765["UN-locode:US"]
+n2765["UN-locode:US .i.e. .cpe"]
 n2747 --> n2765
 n2766["ce"]
 n2765 --> n2766
@@ -5560,15 +5560,15 @@ n2779["cnsseq:succ(fqdn[8:-27], digits, carry_rollover)-eth0"]
 n2776 --> n2779
 n2780["pima"]
 n1 --> n2780
-n2781["UN-subdiv:US"]
+n2781["UN-subdiv:US .i.e. .az"]
 n2780 --> n2781
 n2782["pimaco"]
 n2781 --> n2782
-n2783["UN-locode:US"]
+n2783["UN-locode:US .i.e. .cdn"]
 n2782 --> n2783
 n2784["ec"]
 n2783 --> n2784
-n2785["UN-locode:US"]
+n2785["UN-locode:US .i.e. -pim"]
 n2784 --> n2785
 n2786["digits@7:[1,1]for:1"]
 n2785 --> n2786
@@ -5590,15 +5590,15 @@ n2794["vptshost1vmseq:succ(fqdn[11:-27], digits, carry_rollover)"]
 n2782 --> n2794
 n2795["pancity"]
 n1 --> n2795
-n2796["UN-subdiv:US"]
+n2796["UN-subdiv:US .i.e. .fl"]
 n2795 --> n2796
 n2797["panamacity"]
 n2796 --> n2797
-n2798["UN-locode:US"]
+n2798["UN-locode:US .i.e. .cdn"]
 n2797 --> n2798
 n2799["ec"]
 n2798 --> n2799
-n2800["UN-locode:US"]
+n2800["UN-locode:US .i.e. -nor"]
 n2799 --> n2800
 n2801["digits@7:[3,3]for:1"]
 n2800 --> n2801
@@ -5606,25 +5606,25 @@ n2802["seq:succ(fqdn[15:-34], digits, carry_rollover)"]
 n2801 --> n2802
 n2803["dtw1"]
 n1 --> n2803
-n2804["UN-locode:US"]
+n2804["UN-locode:US .i.e. .ecd"]
 n2803 --> n2804
 n2805["detr"]
 n2804 --> n2805
-n2806["UN-locode:US"]
+n2806["UN-locode:US .i.e. -ent"]
 n2805 --> n2806
 n2807["cnsseq:succ(fqdn[12:-21], digits, carry_rollover)"]
 n2806 --> n2807
 n2808["knox"]
 n1 --> n2808
-n2809["UN-subdiv:US"]
+n2809["UN-subdiv:US .i.e. .tn"]
 n2808 --> n2809
 n2810["bluelight"]
 n2809 --> n2810
-n2811["UN-locode:US"]
+n2811["UN-locode:US .i.e. .cdn"]
 n2810 --> n2811
 n2812["ec"]
 n2811 --> n2812
-n2813["UN-locode:US"]
+n2813["UN-locode:US .i.e. -nas"]
 n2812 --> n2813
 n2814["digits@7:[1,1]for:1"]
 n2813 --> n2814
@@ -5638,7 +5638,7 @@ n2818["digits@5:[1,1]for:1"]
 n2817 --> n2818
 n2819["soagseq:succ(fqdn[9:-32], digits, carry_rollover)"]
 n2818 --> n2819
-n2820["UN-locode:US"]
+n2820["UN-locode:US .i.e. .cpe"]
 n2809 --> n2820
 n2821["ce"]
 n2820 --> n2821
@@ -5646,7 +5646,7 @@ n2822["seq:succ(fqdn[3:-27], digits_lower, carry_rollover)00w"]
 n2821 --> n2822
 n2823["ibone"]
 n1 --> n2823
-n2824["UN-subdiv:US"]
+n2824["UN-subdiv:US .i.e. .co, .va, .or"]
 n2823 --> n2824
 n2825["111eighthave"]
 n2824 --> n2825
@@ -5654,7 +5654,7 @@ n2826["be"]
 n2825 --> n2826
 n2827["seq:succ(fqdn[3:-39], digits, carry_rollover)-pe12"]
 n2826 --> n2827
-n2828["GEO-names:US"]
+n2828["GEO-names:US .i.e. .ashburn, .portland, .miami"]
 n2824 --> n2828
 n2829["be"]
 n2828 --> n2829
@@ -5704,7 +5704,7 @@ n2851["be"]
 n2850 --> n2851
 n2852["seq:succ(fqdn[3:-38], digits, carry_rollover)-pe11"]
 n2851 --> n2852
-n2853["GEO-classification:.ca"]
+n2853["GEO-classification:.ca .i.e. .ca"]
 n2823 --> n2853
 n2854["9greatoaks"]
 n2853 --> n2854
@@ -5718,7 +5718,7 @@ n2858["digits@7:[0,0]for:1"]
 n2857 --> n2858
 n2859["seq:succ(fqdn[9:-37], digits, carry_rollover)-pe01"]
 n2858 --> n2859
-n2860["GEO-classification:.il"]
+n2860["GEO-classification:.il .i.e. .il"]
 n2823 --> n2860
 n2861["350ecermak"]
 n2860 --> n2861
@@ -5730,7 +5730,7 @@ n2864["seq:succ(fqdn[8:-37], digits, carry_rollover)-pe03"]
 n2863 --> n2864
 n2865["crseq:succ(fqdn[9:-32], digits, carry_rollover)"]
 n2863 --> n2865
-n2866["GEO-names:US"]
+n2866["GEO-names:US .i.e. .northlake"]
 n2860 --> n2866
 n2867["te"]
 n2866 --> n2867
@@ -5760,7 +5760,7 @@ n2879["seq:succ(fqdn[9:-26], digits, carry_rollover)"]
 n2878 --> n2879
 n2880["corp"]
 n1 --> n2880
-n2881["UN-subdiv:US"]
+n2881["UN-subdiv:US .i.e. .pa"]
 n2880 --> n2881
 n2882["wcdc"]
 n2881 --> n2882
@@ -5836,19 +5836,19 @@ n2917["compat"]
 n2916 --> n2917
 n2918["xm5g"]
 n1 --> n2918
-n2919["UN-locode:US"]
+n2919["UN-locode:US .i.e. .ems"]
 n2918 --> n2919
-n2920["UN-locode:US"]
+n2920["UN-locode:US .i.e. .usm"]
 n2919 --> n2920
 n2921["seq:succ(fqdn[4:-21], digits_lower, carry_rollover)"]
 n2920 --> n2921
 n2922["ndcchgo"]
 n1 --> n2922
-n2923["GEO-classification:.il"]
+n2923["GEO-classification:.il .i.e. .il"]
 n2922 --> n2923
-n2924["GEO-names:US"]
+n2924["GEO-names:US .i.e. .northlake"]
 n2923 --> n2924
-n2925["UN-locode:US"]
+n2925["UN-locode:US .i.e. .et3, .eth, .svi"]
 n2924 --> n2925
 n2926["digits@5:[2,100]for:4"]
 n2925 --> n2926
@@ -6134,7 +6134,7 @@ n3066["ip"]
 n1 --> n3066
 n3067["rdei"]
 n3066 --> n3067
-n3068["UN-locode:US"]
+n3068["UN-locode:US .i.e. -vip"]
 n3067 --> n3068
 n3069["seq:succ(fqdn[9:-22], digits, carry_rollover)-dev"]
 n3068 --> n3069
@@ -6142,11 +6142,11 @@ n3070["digits@5:[1,1]for:1"]
 n3069 --> n3070
 n3071["mphs"]
 n1 --> n3071
-n3072["UN-subdiv:US"]
+n3072["UN-subdiv:US .i.e. .tn"]
 n3071 --> n3072
 n3073["mendenhallrd"]
 n3072 --> n3073
-n3074["UN-locode:US"]
+n3074["UN-locode:US .i.e. .rio"]
 n3073 --> n3074
 n3075["comp"]
 n3074 --> n3075
@@ -6172,11 +6172,11 @@ n3085["seq:succ(fqdn[10:-33], digits, carry_rollover)"]
 n3084 --> n3085
 n3086["nash"]
 n1 --> n3086
-n3087["UN-subdiv:US"]
+n3087["UN-subdiv:US .i.e. .tn, .ky"]
 n3086 --> n3087
 n3088["airlinedr"]
 n3087 --> n3088
-n3089["UN-locode:US"]
+n3089["UN-locode:US .i.e. .rio"]
 n3088 --> n3089
 n3090["comp"]
 n3089 --> n3090
@@ -6190,7 +6190,7 @@ n3094["seq:succ(fqdn[10:-30], digits, carry_rollover)"]
 n3093 --> n3094
 n3095["airlanedr"]
 n3087 --> n3095
-n3096["UN-locode:US"]
+n3096["UN-locode:US .i.e. .rio"]
 n3095 --> n3096
 n3097["storacc"]
 n3096 --> n3097
@@ -6206,25 +6206,25 @@ n3102["seq:succ(fqdn[16:-30], digits, carry_rollover)"]
 n3101 --> n3102
 n3103["gallatin"]
 n3087 --> n3103
-n3104["UN-locode:US"]
+n3104["UN-locode:US .i.e. .cdn"]
 n3103 --> n3104
 n3105["ec"]
 n3104 --> n3105
-n3106["UN-locode:US"]
+n3106["UN-locode:US .i.e. -nas"]
 n3105 --> n3106
 n3107["seq:succ(fqdn[11:-29], digits, carry_rollover)"]
 n3106 --> n3107
-n3108["GEO-names:US"]
+n3108["GEO-names:US .i.e. .nashville, .springfield, .paducah"]
 n3087 --> n3108
 n3109["ae"]
 n3108 --> n3109
 n3110["seq:succ(fqdn[3:-35], digits, carry_rollover)-ar02"]
 n3109 --> n3110
-n3111["UN-locode:US"]
+n3111["UN-locode:US .i.e. .cdn"]
 n3108 --> n3111
 n3112["ec"]
 n3111 --> n3112
-n3113["UN-locode:US"]
+n3113["UN-locode:US .i.e. -nas"]
 n3112 --> n3113
 n3114["digits@7:[2,2]for:1"]
 n3113 --> n3114
@@ -6242,7 +6242,7 @@ n3120["et"]
 n3108 --> n3120
 n3121["seq:succ(fqdn[3:-34], digits, carry_rollover)-rer03"]
 n3120 --> n3121
-n3122["UN-locode:US"]
+n3122["UN-locode:US .i.e. .cpe"]
 n3087 --> n3122
 n3123["ce"]
 n3122 --> n3123
@@ -6254,7 +6254,7 @@ n3126["sagseq:succ(fqdn[3:-30], digits, carry_rollover)"]
 n3125 --> n3126
 n3127["dma1"]
 n1 --> n3127
-n3128["UN-locode:US"]
+n3128["UN-locode:US .i.e. .nlb"]
 n3127 --> n3128
 n3129["tucs"]
 n3128 --> n3129
@@ -6262,7 +6262,7 @@ n3130["cnsseq:succ(fqdn[8:-21], digits, carry_rollover)"]
 n3129 --> n3130
 n3131["pitt"]
 n1 --> n3131
-n3132["UN-subdiv:US"]
+n3132["UN-subdiv:US .i.e. .pa"]
 n3131 --> n3132
 n3133["lowerpaxton"]
 n3132 --> n3133
@@ -6270,7 +6270,7 @@ n3134["be"]
 n3133 --> n3134
 n3135["seq:succ(fqdn[3:-38], digits, carry_numeric)-rar01"]
 n3134 --> n3135
-n3136["GEO-names:US"]
+n3136["GEO-names:US .i.e. .lancaster, .york, .pittsburgh"]
 n3132 --> n3136
 n3137["po"]
 n3136 --> n3137
@@ -6312,7 +6312,7 @@ n3155["digits@7:[1,1]for:1"]
 n3154 --> n3155
 n3156["seq:succ(fqdn[9:-39], digits, carry_rollover)-sur03"]
 n3155 --> n3156
-n3157["UN-locode:US"]
+n3157["UN-locode:US .i.e. .cpe"]
 n3132 --> n3157
 n3158["ce"]
 n3157 --> n3158
@@ -6342,11 +6342,11 @@ n3170["rerseq:succ(fqdn[8:-32], digits, carry_rollover)"]
 n3169 --> n3170
 n3171["ndcasbn"]
 n1 --> n3171
-n3172["UN-subdiv:US"]
+n3172["UN-subdiv:US .i.e. .va"]
 n3171 --> n3172
-n3173["GEO-names:US"]
+n3173["GEO-names:US .i.e. .ashburn"]
 n3172 --> n3173
-n3174["UN-locode:US"]
+n3174["UN-locode:US .i.e. .eth, .et3, .svi"]
 n3173 --> n3174
 n3175["digits@5:[1,100]for:6"]
 n3174 --> n3175
@@ -6632,17 +6632,17 @@ n3315["vrex"]
 n1 --> n3315
 n3316["voicesrv"]
 n3315 --> n3316
-n3317["UN-locode:US"]
+n3317["UN-locode:US .i.e. -hdc"]
 n3316 --> n3317
 n3318["seq:succ(fqdn[13:-18], digits, carry_rollover)p"]
 n3317 --> n3318
 n3319["tallah"]
 n1 --> n3319
-n3320["UN-subdiv:US"]
+n3320["UN-subdiv:US .i.e. .fl"]
 n3319 --> n3320
 n3321["commonwlthdr"]
 n3320 --> n3321
-n3322["UN-locode:US"]
+n3322["UN-locode:US .i.e. .rio"]
 n3321 --> n3322
 n3323["comp"]
 n3322 --> n3323
@@ -6658,13 +6658,13 @@ n3328["seq:succ(fqdn[17:-35], digits, carry_rollover)"]
 n3327 --> n3328
 n3329["lrock"]
 n1 --> n3329
-n3330["UN-subdiv:US"]
+n3330["UN-subdiv:US .i.e. .ar"]
 n3329 --> n3330
 n3331["sshackleford"]
 n3330 --> n3331
 n3332["vptshost1vmseq:succ(fqdn[11:-34], digits, carry_rollover)"]
 n3331 --> n3332
-n3333["GEO-names:US"]
+n3333["GEO-names:US .i.e. .littlerock"]
 n3330 --> n3333
 n3334["be"]
 n3333 --> n3334
@@ -6674,27 +6674,27 @@ n3336["ar01"]
 n3335 --> n3336
 n3337["xm"]
 n1 --> n3337
-n3338["UN-locode:US"]
+n3338["UN-locode:US .i.e. .ecs"]
 n3337 --> n3338
 n3339["geofence"]
 n3338 --> n3339
-n3340["directional:-west"]
+n3340["directional:-west .i.e. -west"]
 n3339 --> n3340
 n3341["seq:succ(fqdn[14:-20], digits, carry_rollover)p"]
 n3340 --> n3341
 n3342["ts43"]
 n3338 --> n3342
-n3343["directional:-west"]
+n3343["directional:-west .i.e. -west"]
 n3342 --> n3343
 n3344["seq:succ(fqdn[10:-20], digits, carry_rollover)p"]
 n3343 --> n3344
 n3345["crnrstn"]
 n1 --> n3345
-n3346["UN-subdiv:US"]
+n3346["UN-subdiv:US .i.e. .pa"]
 n3345 --> n3346
 n3347["dt"]
 n3346 --> n3347
-n3348["UN-locode:US"]
+n3348["UN-locode:US .i.e. .dca"]
 n3347 --> n3348
 n3349["cap1000corevideo2gigeseq:succ(fqdn[21:-30], digits, carry_rollover)"]
 n3348 --> n3349
@@ -6702,7 +6702,7 @@ n3350["cap1000corevideo3gigeseq:succ(fqdn[21:-30], digits, carry_rollover)"]
 n3348 --> n3350
 n3351["cap1000corevideo1gigeseq:succ(fqdn[21:-30], digits, carry_rollover)"]
 n3348 --> n3351
-n3352["UN-locode:US"]
+n3352["UN-locode:US .i.e. .dca"]
 n3346 --> n3352
 n3353["dt"]
 n3352 --> n3353
@@ -6712,9 +6712,9 @@ n3355["rurseq:succ(fqdn[3:-42], digits, carry_rollover)-cornerstone"]
 n3353 --> n3355
 n3356["utah"]
 n1 --> n3356
-n3357["UN-subdiv:US"]
+n3357["UN-subdiv:US .i.e. .ut"]
 n3356 --> n3357
-n3358["GEO-names:US"]
+n3358["GEO-names:US .i.e. .sandy"]
 n3357 --> n3358
 n3359["be"]
 n3358 --> n3359
@@ -6744,7 +6744,7 @@ n3371["ssagseq:succ(fqdn[20:-33], digits, carry_rollover)"]
 n3370 --> n3371
 n3372["rerseq:succ(fqdn[3:-33], digits, carry_rollover)"]
 n3362 --> n3372
-n3373["UN-locode:US"]
+n3373["UN-locode:US .i.e. .cpe"]
 n3357 --> n3373
 n3374["ce"]
 n3373 --> n3374
@@ -6752,9 +6752,9 @@ n3375["seq:succ(fqdn[3:-27], digits_lower, carry_rollover)00w"]
 n3374 --> n3375
 n3376["ndchlsbr"]
 n1 --> n3376
-n3377["UN-subdiv:US"]
+n3377["UN-subdiv:US .i.e. .or"]
 n3376 --> n3377
-n3378["GEO-names:US"]
+n3378["GEO-names:US .i.e. .hillsboro"]
 n3377 --> n3378
 n3379["et"]
 n3378 --> n3379
@@ -6920,7 +6920,7 @@ n3459["sw115seq:succ(fqdn[5:-36], digits_lower, carry_rollover)-d"]
 n3378 --> n3459
 n3460["sw110seq:succ(fqdn[5:-36], digits_lower, carry_rollover)-d"]
 n3378 --> n3460
-n3461["UN-locode:US"]
+n3461["UN-locode:US .i.e. .svi"]
 n3378 --> n3461
 n3462["digits@5:[100,100]for:1"]
 n3461 --> n3462
@@ -6948,27 +6948,27 @@ n3473["sw74seq:succ(fqdn[4:-36], digits_lower, carry_rollover)-d"]
 n3378 --> n3473
 n3474["atl1"]
 n1 --> n3474
-n3475["UN-locode:US"]
+n3475["UN-locode:US .i.e. .ecd"]
 n3474 --> n3475
 n3476["atlt"]
 n3475 --> n3476
-n3477["UN-locode:US"]
+n3477["UN-locode:US .i.e. -ent"]
 n3476 --> n3477
 n3478["cnsseq:succ(fqdn[12:-21], digits, carry_rollover)"]
 n3477 --> n3478
 n3479["cos1"]
 n1 --> n3479
-n3480["UN-locode:US"]
+n3480["UN-locode:US .i.e. .ecd"]
 n3479 --> n3480
 n3481["dnvr"]
 n3480 --> n3481
-n3482["UN-locode:US"]
+n3482["UN-locode:US .i.e. -ent"]
 n3481 --> n3482
 n3483["cnsseq:succ(fqdn[12:-21], digits, carry_rollover)"]
 n3482 --> n3483
 n3484["krproxy"]
 n1 --> n3484
-n3485["UN-locode:US"]
+n3485["UN-locode:US .i.e. -ch2"]
 n3484 --> n3485
 n3486["seq:succ(fqdn[12:-14], digits_lower, carry_rollover)1p"]
 n3485 --> n3486
@@ -6978,7 +6978,7 @@ n3488["seq:succ(fqdn[11:-14], digits_lower, carry_rollover)1p"]
 n3487 --> n3488
 n3489["olm1"]
 n1 --> n3489
-n3490["UN-locode:US"]
+n3490["UN-locode:US .i.e. .nlb"]
 n3489 --> n3490
 n3491["twtr"]
 n3490 --> n3491
@@ -6994,7 +6994,7 @@ n3496["seq:succ(fqdn[13:-19], digits, carry_rollover)v"]
 n3495 --> n3496
 n3497["ndcsouth"]
 n1 --> n3497
-n3498["UN-subdiv:US"]
+n3498["UN-subdiv:US .i.e. .ga"]
 n3497 --> n3498
 n3499["stonemtn"]
 n3498 --> n3499
@@ -7014,11 +7014,11 @@ n3506["seq:succ(fqdn[19:-12], digits, carry_rollover)"]
 n3505 --> n3506
 n3507["stn1"]
 n1 --> n3507
-n3508["UN-locode:US"]
+n3508["UN-locode:US .i.e. .ecd"]
 n3507 --> n3508
 n3509["uhub"]
 n3508 --> n3509
-n3510["UN-locode:US"]
+n3510["UN-locode:US .i.e. -ent"]
 n3509 --> n3510
 n3511["cnsseq:succ(fqdn[12:-21], digits, carry_rollover)"]
 n3510 --> n3511
@@ -7038,7 +7038,7 @@ n3518["natl"]
 n1 --> n3518
 n3519["bcdv"]
 n3518 --> n3519
-n3520["UN-locode:US"]
+n3520["UN-locode:US .i.e. -eme"]
 n3519 --> n3520
 n3521["eseq:succ(fqdn[1:-27], digits, carry_rollover)7"]
 n3520 --> n3521

@@ -60,11 +60,12 @@ def generate_mermaid_tree(node, parent_label=None, lines=None, node_id=0, aggreg
 
 def plot_tree_metrics(metrics_dict):
     df = pd.DataFrame(metrics_dict).T.reset_index()
-    df = df.rename(columns={"index": "etldp1"})
-    df = pd.melt(df, id_vars="etldp1", var_name="Metric", value_name="Value")
+    df= df.rename(columns={"index": "etldp1"})
+    melted_df = df.melt(id_vars="etldp1", var_name="Metric", 
+                        value_vars=["branching_to_leaf_ratio", "average_out_degree"])
 
     plt.figure(figsize=(10, 6))
-    sns.barplot(data=df, x="etldp1", y="Value", hue="Metric")
+    sns.barplot(data=melted_df, x="etldp1", y="value", hue="Metric")
     plt.title("Tree Complexity Metrics Across etldp1")
     plt.xlabel("eTLD+1")
     plt.ylabel("Metric Value")
