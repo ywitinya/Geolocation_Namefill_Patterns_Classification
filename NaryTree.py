@@ -38,7 +38,6 @@ class NaryTree:
         result = {}
 
         result['label'] = node.label
-
         if node.values:
             result['values'] = list(node.values)
 
