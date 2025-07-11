@@ -2,6 +2,7 @@ import argparse
 import sys
 import re
 import pandas as pd
+import gzip
 from collections import defaultdict, deque
 from difflib import get_close_matches
 
@@ -160,13 +161,15 @@ def main():
     parser.add_argument("--geodb", default="geo_name_un_locode.db", help="Path to geo DB")
     parser.add_argument("--graph", default="normal", choices=["normal", "aggregated"], help="Graph aggregation option")
     parser.add_argument("-d", "--digits", action="store_true", help="Apply digits-aggregation")
+    parser.add_argument("--export-json", type=str, help="Export all plucked trees as JSON files")
+    parser.add_argument("--export-metrics", type=str, help="Path to save tree complexity metrics as CSV")
     args = parser.parse_args()
 
     df = pd.read_csv(args.input, sep='|', header=None, names=['patterntype', 'pattern', 'ip', 'etldp1', 'ipprefix', 'matchcount'])
     df['pattern_clean'] = df['pattern'].apply(normalize_namefill_pattern)
     df['country_iso'] = df['ip'].apply(get_iso_country)
 
-    trees, tree_complexity_metrics, plucked_trees = {}, {}, {}
+    trees, tree_complexity_metrics, plucked_trees, all_trees_dict = {}, {}, {}, {}
     for _, row in df.iterrows():
         pattern, etldp1, country_iso = row['pattern_clean'], row['etldp1'], row['country_iso']
         if pd.notna(pattern) and pd.notna(etldp1) and pd.notna(country_iso):
@@ -187,6 +190,10 @@ def main():
             plucked_tree = aggregate_digits_by_depth(plucked_tree)
         tree_complexity_metrics[etldp1] = analyze_tree_complexity(plucked_tree)
         lines, _ = generate_mermaid_tree(plucked_tree.root, aggregated=(args.graph == "aggregated"))
+        
+        # store the trees/visualize and analyse
+        all_trees_dict[etldp1] = NaryTree.tree_to_dict(plucked_tree.root)
+
         try:
             with open(f"mermaid_trees/{etldp1}_plucked_tree.mmd", 'w') as f:
                 f.write("\n".join(lines))
@@ -194,7 +201,13 @@ def main():
             count_ambigous += 1
             with open(f"ambigous_etldp1/{count_ambigous}_plucked_tree.mmd", 'w') as f:
                 f.write("\n".join(lines))
+
     metrics_df = plot_tree_metrics(tree_complexity_metrics)
+    if args.export_metrics:
+        metrics_df.to_csv(args.export_metrics)
+    if args.export_json:
+        with gzip.open(args.export_json, 'wt', encoding='utf-8') as f:
+            json.dump(all_trees_dict, f)
     conn.close()
 
 if __name__ == "__main__":
